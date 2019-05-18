@@ -4,6 +4,7 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Техномарт - каталог</title>
+
 </head>
 
 <body>
@@ -30,7 +31,7 @@
         <a href="tel:+7(812)555-05-55">+7 (812) 555-05-55</a>
       </section>
       <ul class="user-navigation">
-        <li class="user-name">Равшан Джамшутович</li>
+        <li class="user-name" >Равшан Джамшутович</li>
         <li class="users-orders">Заказы</li>
         <li class="personal-account">Личный кабинет</li>
       </ul>
@@ -58,8 +59,59 @@
     <h2 class="page-title">Перфораторы</h2>
     <section class="filters">
       <h2 class="visually-hidden">Филтр товаров</h2>
-      <!-- Здесь будет форма -->
+
+      <form class="filter" method="get" action="https://echo.htmlacademy.ru">
+        <fieldset>
+          <legend>Производители:</legend>
+          <ul>
+            <li class="filter-option">
+              <input class="vissually-hidden filter-input filter-input-checkbox" name="bosh"
+                type="checkbox" id="filter-bosh" checked>
+              <label for="filter-bosh">BOSCH</label>
+            </li>
+            <li class="filter-option">
+              <input class="vissually-hidden filter-input filter-input-checkbox" name="interskol" type="checkbox"
+                id="filter-interskol">
+              <label for="filter-interskol">ИНТЕРСКОЛ</label>
+            </li>
+            <li class="filter-option">
+              <input class="vissually-hidden filter-input filter-input-checkbox" name="makita" type="checkbox"
+                id="filter-makita" checked>
+              <label for="filter-makita">MAKIta</label>
+            </li>
+            <li class="filter-option">
+              <input class="vissually-hidden filter-input filter-input-checkbox" name="dewalt" type="checkbox"
+                id="filter-dewalt">
+              <label for="filter-dewalt">Dewalt</label>
+            </li>
+            <li class="filter-option">
+              <input class="vissually-hidden filter-input filter-input-checkbox" name="hitachi" type="checkbox"
+                id="filter-hitachi">
+              <label for="filter-hitachi"> Hitachi</label>
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset>
+          <legend>Питание:</legend>
+          <ul>
+            <li calss="filter-option">
+              <input class="visually-hidden filter-input filter-input-radio" type="radio" name="product-group"
+                value="on-battery" id="filter-on-battery" checked>
+              <label for="filter-on-battery">Аккумуляторные</label>
+            </li>
+            <li>
+              <input class="visually-hidden filter-input filter-input-radio" type="radio" name="product-group"
+                value="electric" id="filter-electric">
+              <label for="filter-electric">Сетевые</label>
+            </li>
+          </ul>
+        </fieldset>
+        <button type="submit" class="filter-button button">
+          Показать
+        </button>
+      </form>
     </section>
+
     <section class="catalog">
       <h2 class="visually-hidden">Перфораторы</h2>
 
@@ -67,7 +119,7 @@
 
         <li class="catalog-item">
           <h3>
-            <a href="catalog-item.html">
+            <a href="catalog-item.html"></a>
               <span class="catalog-category">Перфоратор BOSCH</span>
               <span class="catalog-item-title">BFG 3000</span>
             </a>

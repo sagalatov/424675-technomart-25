@@ -10,13 +10,14 @@
 }*/
 
 .modal-feedback,
-.modal-map {
+.modal-map,
+.modal-cart, {
   display: none;
 }
 
 body {
   margin: 0;
-  font-family: 'Cuprum', sans-serif, 'Arial Narrow', Arial, sans-serif;
+  font-family: 'Cuprum', sans-serif, 'Arial Narrow',sans-serif;
   font-size: 17px;
   line-height: 23px;
   font-weight: 400;
@@ -85,6 +86,16 @@ a {
 
 }
 
+.site-navigation-current a {
+  background-color: #ee3643;
+}
+
+.site-navigation-current a:hover,
+.site-navigation-current a:focus,
+.site-navigation-current a:active {
+  background-color: #ee3643;
+}
+
 .search-form input {
   font: inherit;
   background-color:  #293449;
@@ -138,6 +149,20 @@ line-height: 24px;
   color: rgba(0, 0, 0, 0.3);
 }
 
+.user-navigation .user-name {
+  font-size: 21px;
+  line-height: 21px;
+}
+
+.user-orders,
+.personal-account {
+  font-size: 16px;
+  font-weight: 18px;
+  color: #32425c;
+  text-decoration: underline;
+}
+
+
 .main-navigation {
   background-color: #32425c;
   font-size: 17px;
@@ -162,6 +187,96 @@ line-height: 24px;
   background-color: #1d2739;
   color: rgba(255, 255, 255, 0.5);
 }
+
+.breadcrumbs {
+  list-style: none;
+  font-family: 'PT Sans', sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+
+.breadcrumbs a {
+color: #000000;
+}
+
+.container .page-title {
+font-size: 30px;
+line-height: 30px;
+background-color: #f2f6f8;
+color: #32425c;
+font-weight: normal;
+text-transform: uppercase;
+}
+
+.filter fieldset {
+  border: none;
+
+}
+
+.filter .filter-button {
+  font-family: 'PT Sans', sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+
+  text-align: center;
+  color: #000000;
+  vertical-align: middle;
+  text-transform: uppercase;
+  border: solid 1px #e5e5e5;
+  background-color: #ffffff;
+  border-radius: 2px;
+}
+
+.catalog-list {
+list-style: none;
+font-family: 'PT Sans', sans-serif;
+font-size: 18px;
+line-height: 20px;
+}
+
+.catalog-list a {
+  color: #000000;
+}
+
+.catalog-item:hover,
+.catalog-item:focus {
+box-shadow: 0px 10px 25px 0 rgba(41, 52, 73, 0.5);
+}
+
+.catalog-item-price {
+font-family: 'PT Sans', sans-serif;
+font-size: 17px;
+line-height: 18px;
+font-weight: bold;
+color: #999999;
+}
+
+.catalog-item-price a {
+background: #ee3643;
+color: #ffffff;
+}
+
+fieldset legend{
+  list-style: none;
+  font-size: 15px;
+  line-height: 20px;
+  font-family: 'PT Sans', sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+fieldset ul {
+  list-style: none;
+  font-size: 15px;
+  line-height: 20px;
+  font-family: 'PT Sans', sans-serif;
+  font-weight: normal;
+  text-transform: uppercase;
+}
+
+
+
 
 .features h2 {
  font-size: 30px;

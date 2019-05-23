@@ -9,12 +9,6 @@
   overflow: hidden;
 }*/
 
-.modal-feedback,
-.modal-map,
-.modal-cart, {
-  display: none;
-}
-
 body {
   margin: 0;
   font-family: 'Cuprum', sans-serif, 'Arial Narrow',sans-serif;
@@ -23,6 +17,12 @@ body {
   font-weight: 400;
   color: #000000;
   background-color: #ffffff;
+}
+
+.modal-feedback,
+.modal-map,
+.modal-cart, {
+  display: none;
 }
 
 .main-header {

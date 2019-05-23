@@ -100,17 +100,17 @@ a {
 }
 
 .header-list a:active {
-  color: rgba 255 255 255, 0.6;
+  color: rgba(255, 255, 255, 0.6);
   background-color: #161d29;
 }
 
-.site-navigation-current a {
+.header-list .full-cart {
   background-color: #ee3643;
 }
 
-.site-navigation-current a:hover,
-.site-navigation-current a:focus,
-.site-navigation-current a:active {
+.header-list .full-cart:hover,
+.header-list .full-cart:focus,
+.header-list .full-cart:active {
   background-color: #ee3643;
 }
 

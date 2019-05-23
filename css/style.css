@@ -25,6 +25,27 @@ body {
   display: none;
 }
 
+.button {
+  font: inherit;
+  text-align: center;
+  color: #ffffff;
+  vertical-align: middle;
+  text-transform: uppercase;
+  background-color: #ee3643;
+  border: none;
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.button:hover,
+.button:focus {
+  background-color: #ca2c37;
+}
+
+.button:active {
+  background-color: #ba2732;
+}
+
 .main-header {
   background-color: #f4f7f9;
 }
@@ -208,7 +229,7 @@ a {
   border: none;
 }
 
-.filter .filter-button {
+.filter-button {
   font-family: 'PT Sans', sans-serif;
   font-size: 13px;
   line-height: 18px;
@@ -219,6 +240,13 @@ a {
   border: solid 1px #e5e5e5;
   background-color: #ffffff;
   border-radius: 2px;
+}
+
+.filter-button:focus,
+.filter-button:hover,
+.filter-button:active {
+  border: solid 1px #e5e5e5;
+  background-color: #ffffff;
 }
 
 .catalog-list {
@@ -290,27 +318,6 @@ fieldset ul {
   color: #000000;
 }
 
-.features .button {
-  font: inherit;
-  text-align: center;
-  color: #ffffff;
-  vertical-align: middle;
-  text-transform: uppercase;
-  background-color: #ee3643;
-  border: none;
-  font-size: 14px;
-  line-height: 18px;
-}
-
-.features .button:hover,
-.features .button:focus {
-  background-color: #ca2c37;
-}
-
-.features .button:active {
-  background-color: #ba2732;
-}
-
 .contacts h2 {
   font-size: 30px;
   line-height: 30px;
@@ -323,27 +330,6 @@ fieldset ul {
   line-height: 24px;
   font-family: 'PT Sans', sans-serif;
   font-weight: normal;
-}
-
-.contacts .button {
-  font: inherit;
-  text-align: center;
-  color: #ffffff;
-  vertical-align: middle;
-  text-transform: uppercase;
-  background-color: #ee3643;
-  border: none;
-  font-size: 14px;
-  line-height: 18px;
-}
-
-.contacts .button:hover,
-.contacts .button:focus {
-  background-color: #ca2c37;
-}
-
-.contacts .button:active {
-  background-color: #ba2732;
 }
 
 .main-footer {

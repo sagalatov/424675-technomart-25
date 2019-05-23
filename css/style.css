@@ -21,7 +21,7 @@ body {
 
 .modal-feedback,
 .modal-map,
-.modal-cart, {
+.modal-cart {
   display: none;
 }
 
@@ -42,7 +42,6 @@ body {
 .main-header-logo:active {
   background-color: #ba2732;
 }
-
 
 a {
   text-decoration: none;
@@ -72,7 +71,6 @@ a {
 .header-list li:last-child a:active {
   color: rgba(255, 255, 255, 0.5);
   background-color: #518534;
-
 }
 
 .header-list a:hover,
@@ -83,7 +81,6 @@ a {
 .header-list a:active {
   color: rgba 255 255 255, 0.6;
   background-color: #161d29;
-
 }
 
 .site-navigation-current a {
@@ -98,7 +95,7 @@ a {
 
 .search-form input {
   font: inherit;
-  background-color:  #293449;
+  background-color: #293449;
   border: none;
 }
 
@@ -117,9 +114,9 @@ a {
 }
 
 .main-header .address {
-color: #32425c;
-font-size: 14px;
-line-height: 24px;
+  color: #32425c;
+  font-size: 14px;
+  line-height: 24px;
 }
 
 .main-header .address a {
@@ -162,7 +159,6 @@ line-height: 24px;
   text-decoration: underline;
 }
 
-
 .main-navigation {
   background-color: #32425c;
   font-size: 17px;
@@ -175,7 +171,6 @@ line-height: 24px;
 
 .main-navigation a {
   color: #ffffff;
-
 }
 
 .main-navigation a:focus,
@@ -197,28 +192,26 @@ line-height: 24px;
 }
 
 .breadcrumbs a {
-color: #000000;
+  color: #000000;
 }
 
 .container .page-title {
-font-size: 30px;
-line-height: 30px;
-background-color: #f2f6f8;
-color: #32425c;
-font-weight: normal;
-text-transform: uppercase;
+  font-size: 30px;
+  line-height: 30px;
+  background-color: #f2f6f8;
+  color: #32425c;
+  font-weight: normal;
+  text-transform: uppercase;
 }
 
 .filter fieldset {
   border: none;
-
 }
 
 .filter .filter-button {
   font-family: 'PT Sans', sans-serif;
   font-size: 13px;
   line-height: 18px;
-
   text-align: center;
   color: #000000;
   vertical-align: middle;
@@ -229,10 +222,10 @@ text-transform: uppercase;
 }
 
 .catalog-list {
-list-style: none;
-font-family: 'PT Sans', sans-serif;
-font-size: 18px;
-line-height: 20px;
+  list-style: none;
+  font-family: 'PT Sans', sans-serif;
+  font-size: 18px;
+  line-height: 20px;
 }
 
 .catalog-list a {
@@ -241,23 +234,23 @@ line-height: 20px;
 
 .catalog-item:hover,
 .catalog-item:focus {
-box-shadow: 0px 10px 25px 0 rgba(41, 52, 73, 0.5);
+  box-shadow: 0px 10px 25px 0 rgba(41, 52, 73, 0.5);
 }
 
 .catalog-item-price {
-font-family: 'PT Sans', sans-serif;
-font-size: 17px;
-line-height: 18px;
-font-weight: bold;
-color: #999999;
+  font-family: 'PT Sans', sans-serif;
+  font-size: 17px;
+  line-height: 18px;
+  font-weight: bold;
+  color: #999999;
 }
 
 .catalog-item-price a {
-background: #ee3643;
-color: #ffffff;
+  background: #ee3643;
+  color: #ffffff;
 }
 
-fieldset legend{
+fieldset legend {
   list-style: none;
   font-size: 15px;
   line-height: 20px;
@@ -275,22 +268,19 @@ fieldset ul {
   text-transform: uppercase;
 }
 
-
-
-
 .features h2 {
- font-size: 30px;
- line-height: 30px;
- color: #000000;
- text-transform: uppercase;
+  font-size: 30px;
+  line-height: 30px;
+  color: #000000;
+  text-transform: uppercase;
 }
 
 .features-list {
-list-style: none;
-font-size: 13px;
-line-height: 24px;
-font-family: 'PT Sans', sans-serif;
-font-weight: normal;
+  list-style: none;
+  font-size: 13px;
+  line-height: 24px;
+  font-family: 'PT Sans', sans-serif;
+  font-weight: normal;
 }
 
 .services {
@@ -301,7 +291,7 @@ font-weight: normal;
 }
 
 .features .button {
-  font:inherit;
+  font: inherit;
   text-align: center;
   color: #ffffff;
   vertical-align: middle;
@@ -314,8 +304,7 @@ font-weight: normal;
 
 .features .button:hover,
 .features .button:focus {
-  background-color: #ca2c37
-
+  background-color: #ca2c37;
 }
 
 .features .button:active {
@@ -327,7 +316,7 @@ font-weight: normal;
   line-height: 30px;
   color: #000000;
   text-transform: uppercase;
- }
+}
 
 .contacts p {
   font-size: 13px;
@@ -337,7 +326,7 @@ font-weight: normal;
 }
 
 .contacts .button {
-  font:inherit;
+  font: inherit;
   text-align: center;
   color: #ffffff;
   vertical-align: middle;
@@ -350,8 +339,7 @@ font-weight: normal;
 
 .contacts .button:hover,
 .contacts .button:focus {
-  background-color: #ca2c37
-
+  background-color: #ca2c37;
 }
 
 .contacts .button:active {
@@ -359,19 +347,19 @@ font-weight: normal;
 }
 
 .main-footer {
-background-color: #32425c;
+  background-color: #32425c;
 }
 
 .main-footer .main-footer-logo {
   box-shadow: inset 0px -5px 0 0 rgba(0, 0, 0, 0.24);
   background-color: #ee3643;
-
 }
 
 .main-footer .address {
-    color: #ffffff;;
-    font-size: 18px;
-    line-height: 24px;
+  color: #ffffff;
+  ;
+  font-size: 18px;
+  line-height: 24px;
 }
 
 .address a {
@@ -384,7 +372,7 @@ background-color: #32425c;
   line-height: 24px;
 }
 
-.footer-nav-list a{
+.footer-nav-list a {
   color: #ffffff;
 }
 
@@ -403,7 +391,7 @@ background-color: #32425c;
   line-height: 24px;
 }
 
-.footer-offer-list a{
+.footer-offer-list a {
   color: #ffd180;
 }
 
@@ -421,17 +409,17 @@ background-color: #32425c;
 }
 
 .footer-copyright {
-  color: #ffffff;;
+  color: #ffffff;
   font-size: 16px;
   line-height: 18px
 }
 
 .footer-social ul {
-list-style: none;
+  list-style: none;
 }
 
 .footer-social a {
-color: #ffffff;
+  color: #ffffff;
 }
 
 .footer-social a:focus,
@@ -447,8 +435,7 @@ color: #ffffff;
   color: #ffffff;
 }
 
-.feedback + a {
-
+.feedback+a {
   color: #ffd180;
   font-size: 16px;
   line-height: 18px;

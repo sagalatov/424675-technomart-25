@@ -355,14 +355,14 @@ fieldset ul {
   background-color: #ee3643;
 }
 
-.main-footer .address {
+.footer-address {
   color: #ffffff;
   ;
   font-size: 18px;
   line-height: 24px;
 }
 
-.address a {
+.footer-address a {
   color: #ffffff;
 }
 

@@ -421,12 +421,8 @@ fieldset ul {
   color: #ffffff;
 }
 
-.feedback+a {
+.footer-link {
   color: #ffd180;
   font-size: 16px;
   line-height: 18px;
-}
-
-.developed a {
-  color: #ffd180;
 }

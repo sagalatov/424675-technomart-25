@@ -12,21 +12,30 @@
 
 <body>
   <header class="main-header">
+
     <div class="header-top">
-      <a class="main-header-logo">
-        <img src="img/logo-technomart.svg" width="119" height="19" alt="Логотип Техномарт">
-      </a>
-      <ul class="header-list">
-        <li>
-          <form class="search-form" action="https://echo.htmlacademy.ru" method="get">
-            <label for="search-item">Поиск</label>
-            <input id="search-item" aria-label="Поиск по сайту" type="search" name="search" value="">
-          </form>
-        </li>
-        <li><a href="#">Закладки</a></li>
-        <li><a href="#">Корзина</a></li>
-        <li><a class="to-order" href="#">Оформить заказ</a></li>
-      </ul>
+      <div class="container">
+        <div class="header-top-column">
+          <a class="main-header-logo">
+            <img src="img/logo-technomart.svg" width="119" height="19" alt="Логотип Техномарт">
+          </a>
+          <ul class="header-list">
+            <li>
+              <form class="search-form" action="https://echo.htmlacademy.ru" method="get">
+                <label for="search-item">Поиск:</label>
+                <input id="search-item" aria-label="Поиск по сайту" type="search" name="search" value="">
+              </form>
+            </li>
+            <li><a href="#">Закладки: 0</a></li>
+            <li><a href="#">Корзина: 0</a></li>
+            <li><a class="to-order" href="#">Оформить заказ</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    </div>
+    <div class="container">
+      <div class="header-middle-column">
       <h1>Интернет-магазин<br>
         строительных материалов<br>
         и инструментов для ремонта
@@ -48,6 +57,7 @@
           </a>
         </li>
       </ul>
+    </div>
       <nav class="main-navigation">
         <ul>
           <li><a href="#">Главная</a></li>

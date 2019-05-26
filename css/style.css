@@ -307,6 +307,7 @@ a {
   margin: 0;
   padding: 0;
   padding-left: 30px;
+  margin-bottom: 20px;
   min-height: 70px;
   font-size: 30px;
   line-height: 30px;
@@ -318,7 +319,6 @@ a {
 
 .catalog-column {
   display: flex;
-  margin-bottom: 52px;
 }
 
 .pagination-list {
@@ -326,7 +326,6 @@ a {
   min-height: 38px;
   list-style: none;
   margin: 0;
-  padding: 0 240px;
   margin-bottom: 60px;
 }
 
@@ -414,6 +413,7 @@ a {
   justify-content: space-between;
   padding: 0;
   margin: 0;
+  margin-bottom: 52px;
   font-family: 'PT Sans', sans-serif;
   font-size: 18px;
   line-height: 20px;

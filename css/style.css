@@ -8,6 +8,7 @@
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+
 body>* {
   outline: rgba(243, 15, 15, 0.3);
 }
@@ -31,7 +32,6 @@ body>*>*>*>*>* {
 body>*>*>*>*>*>* {
   outline: 2px solid rgb(100, 30, 255);
 }
-
 
 .reset-list {
   margin: 0;
@@ -87,11 +87,13 @@ body {
 }
 
 .main-header-logo {
-  box-shadow: inset 0px -5px 0 0 rgba(0, 0, 0, 0.24);
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background-color: #ee3643;
-  height: 47px;
+  min-height: 40px;
   width: 220px;
-  margin-right: 20px;
+  margin-right: 5px;
 }
 
 .main-header-logo:focus,
@@ -117,7 +119,7 @@ a {
   display: flex;
   align-items: center;
   width: 710px;
-  height: 42px;
+  min-height: 42px;
   color: #ffffff;
   font-size: 17px;
   line-height: 18px;
@@ -126,7 +128,6 @@ a {
 .header-list li {
   text-align: center;
   width: 150px;
-  margin: 0 5px;
 }
 
 .header-list li:first-child {
@@ -135,6 +136,15 @@ a {
 
 .header-list a {
   color: #ffffff;
+}
+
+.header-list a:last-child{
+  margin: 0;
+  display: block;
+  word-wrap: normal;
+  padding: 12px 8px;
+
+
 }
 
 .header-list .to-order {
@@ -171,8 +181,10 @@ a {
   background-color: #ee3643;
 }
 
+
 .header-top-column {
   display: flex;
+  justify-content: space-between;
 }
 
 .search-form input {
@@ -186,17 +198,22 @@ a {
   background-color: #ffffff;
 }
 
+.search-form label {
+  margin-left: 12px;
+}
+
 .header-middle-column {
   display: flex;
-  justify-content: column;
+  justify-content: flex-end;
+  align-items: center;
   margin-bottom: 44px;
 }
 
 .main-header h1 {
   margin: 0;
   padding: 0;
-  width: 300px;
-  margin-right: 20px;
+  padding-left: 20px;
+  width: 313px;
   font-family: 'Cuprum', 'Arial Narrow', sans-serif;
   font-weight: normal;
   font-style: italic;
@@ -206,9 +223,13 @@ a {
 }
 
 .header-address {
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: flex-start;
+  align-items: center;
   margin: 0;
   padding: 0;
-  width: 300px;
+  width: 313px;
   margin-right: 20px;
 }
 
@@ -227,7 +248,7 @@ a {
 
 .user-navigation {
   display: flex;
-  width: 300px;
+  width: 313px;
 }
 
 .user-navigation a {

@@ -8,6 +8,36 @@
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+body>* {
+  outline: rgba(243, 15, 15, 0.3);
+}
+
+body>*>* {
+  outline: 2x solid rgb(255, 255, 0);
+}
+
+body>*>*>* {
+  outline: 2px solid rgb(0, 255, 0);
+}
+
+body>*>*>*>* {
+  outline: 2px solid rgb(4, 0, 255);
+}
+
+body>*>*>*>*>* {
+  outline: 2px solid rgb(200, 30, 255);
+}
+
+body>*>*>*>*>*>* {
+  outline: 2px solid rgb(100, 30, 255);
+}
+
+
+.reset-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
 
 .container {
   width: 940px;
@@ -86,11 +116,8 @@ a {
 .header-list {
   display: flex;
   align-items: center;
-  margin: 0;
-  padding: 0;
   width: 710px;
   height: 42px;
-  list-style: none;
   color: #ffffff;
   font-size: 17px;
   line-height: 18px;
@@ -199,9 +226,6 @@ a {
 }
 
 .user-navigation {
-  list-style: none;
-  margin: 0;
-  padding: 0;
   display: flex;
   width: 300px;
 }
@@ -246,9 +270,7 @@ a {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  list-style: none;
   min-height: 60px;
-  margin: 0;
   padding: 0 56px 0 52px;
 
 }
@@ -275,14 +297,11 @@ a {
   display: flex;
   align-items: center;
   background-color: #ffffff;
-  list-style: none;
   min-height: 60px;
   font-family: 'PT Sans', sans-serif;
   font-size: 13px;
   line-height: 18px;
   text-transform: uppercase;
-  margin: 0;
-  padding: 0;
 }
 
 .breadcrumbs li:first-child {
@@ -324,8 +343,6 @@ a {
 .pagination-list {
   display: flex;
   min-height: 38px;
-  list-style: none;
-  margin: 0;
   margin-bottom: 60px;
 }
 
@@ -409,10 +426,7 @@ a {
 .catalog-list {
   display: flex;
   flex-wrap: wrap;
-  list-style: none;
   justify-content: space-between;
-  padding: 0;
-  margin: 0;
   margin-bottom: 52px;
   font-family: 'PT Sans', sans-serif;
   font-size: 18px;
@@ -442,7 +456,6 @@ a {
 }
 
 .product-filter .legend-item {
-  list-style: none;
   font-size: 15px;
   line-height: 20px;
   font-family: 'PT Sans', sans-serif;
@@ -451,7 +464,6 @@ a {
 }
 
 .product-filter ul {
-  list-style: none;
   font-size: 15px;
   line-height: 20px;
   font-family: 'PT Sans', sans-serif;
@@ -478,7 +490,6 @@ a {
 }
 
 .features-list {
-  list-style: none;
   font-size: 13px;
   line-height: 24px;
   font-family: 'PT Sans', sans-serif;
@@ -486,7 +497,6 @@ a {
 }
 
 .services {
-  list-style: none;
   font-size: 18px;
   line-height: 24px;
   color: #000000;
@@ -555,7 +565,6 @@ a {
 }
 
 .footer-nav-list {
-  list-style: none;
   font-size: 18px;
   line-height: 24px;
 }
@@ -574,7 +583,6 @@ a {
 }
 
 .footer-offer-list {
-  list-style: none;
   font-size: 18px;
   line-height: 24px;
 }
@@ -617,12 +625,6 @@ a {
   margin: 0;
   padding: 0;
   width: 132px;
-}
-
-.footer-social ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
 }
 
 .footer-social a {

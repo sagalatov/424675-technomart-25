@@ -84,7 +84,6 @@ body {
 
 .main-header {
   background-color: #f4f7f9;
-
 }
 
 .main-header-logo {
@@ -184,7 +183,6 @@ a {
   background-color: #ee3643;
 }
 
-
 .header-top-column {
   display: flex;
   justify-content: space-between;
@@ -221,7 +219,6 @@ svg {
 .header-list li:hover path {
   fill: #ffffff;
   opacity: 1;
-
 }
 
 .header-list path {
@@ -255,7 +252,6 @@ svg {
   font-size: 16px;
   line-height: 23px;
   color: #ee3643;
-
 }
 
 .main-header .address {
@@ -955,7 +951,6 @@ svg {
   color: #ffffff;
   font-size: 16px;
   line-height: 18px;
-
 }
 
 .footer-social {

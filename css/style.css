@@ -84,7 +84,7 @@ body {
 
 .main-header {
   background-color: #f4f7f9;
-  min-height: 320px;
+
 }
 
 .main-header-logo {
@@ -233,7 +233,8 @@ svg {
   position: relative;
 }
 
-.header-list .cart {
+.header-list .cart,
+.header-list .full-cart {
   position: relative;
 }
 

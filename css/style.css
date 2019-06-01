@@ -185,9 +185,8 @@ a {
 }
 
 .header-list:first-child {
-  background-color: #212a3a;;
+  background-color: #212a3a;
 }
-
 
 .search-form {
   font: inherit;
@@ -201,8 +200,6 @@ a {
   background-color: #212a3a;
 }
 
-
-
 .search-form label {
   margin-left: 33px;
 }
@@ -215,8 +212,7 @@ svg {
   height: 17px;
 }
 
-
-.header-list li:hover path{
+.header-list li:hover path {
   fill: #ffffff;
   opacity: 1;
 
@@ -235,12 +231,10 @@ svg {
   position: relative;
 }
 
-
 .header-middle-column {
   display: flex;
   margin-bottom: 40px;
 }
-
 
 .main-header h1 {
   width: 200px;
@@ -272,7 +266,6 @@ svg {
   width: 313px;
   margin-right: 23px;
 }
-
 
 .header-address p {
   margin: 0;
@@ -317,7 +310,6 @@ svg {
 .user-navigation {
   display: flex;
   align-self: flex-start;
-
 }
 
 .user-navigation a {
@@ -372,7 +364,7 @@ svg {
   position: relative;
 }
 
-.login svg{
+.login svg {
   top: 3px;
   left: -9px;
   width: 20px;
@@ -392,7 +384,6 @@ svg {
   fill: #c5c5c5;
 }
 
-
 .registration-link {
   display: flex;
   flex-direction: column;
@@ -409,7 +400,6 @@ svg {
   align-self: center;
 }
 
-
 .main-navigation {
   background-color: #32425c;
   font-size: 17px;
@@ -425,7 +415,6 @@ svg {
   padding: 0 25px 0 25px;
 }
 
-
 .main-navigation li:last-child {
   margin-right: 0;
 }
@@ -435,7 +424,6 @@ svg {
   padding: 20px 30px;
   color: #ffffff;
 }
-
 
 .main-navigation a:focus,
 .main-navigation a:hover {
@@ -447,6 +435,10 @@ svg {
   color: rgba(255, 255, 255, 0.5);
 }
 
+.categories {
+  margin-bottom: 1873px;
+}
+
 .categories-list {
   position: relative;
   display: flex;
@@ -455,7 +447,7 @@ svg {
 
 .categories-list .new-flag {
   position: absolute;
-  left: 200px;
+  left: 240px;
 }
 
 .categories-list li {
@@ -463,6 +455,7 @@ svg {
   margin-bottom: 20px;
 
 }
+
 .categories-list li:nth-child(3n) {
   margin-right: 0;
 }
@@ -472,18 +465,18 @@ svg {
 }
 
 .categories a {
-display: block;
-text-align: center;
-width: 122px;
-text-transform: uppercase;
-font-size: 14px;
-line-height: 18px;
-color: #ffffff;
-padding: 8px 5px;
-background-color: rgba(0, 0, 0, 0.100);
-border-radius: 2px;
-margin-left: 25px;
-margin-bottom: 20px;
+  display: block;
+  text-align: center;
+  width: 122px;
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 18px;
+  color: #ffffff;
+  padding: 8px 5px;
+  background-color: rgba(0, 0, 0, 0.100);
+  border-radius: 2px;
+  margin-left: 25px;
+  margin-bottom: 23px;
 }
 
 .categories p {
@@ -504,7 +497,6 @@ margin-bottom: 20px;
   width: 300px;
   background-color: #ffbf47;
   position: relative;
-
 }
 
 .materials svg {
@@ -513,7 +505,6 @@ margin-bottom: 20px;
   height: 64px;
   top: 30px;
   left: 214px;
-
 }
 
 .tools {
@@ -543,9 +534,7 @@ margin-bottom: 20px;
   height: 62px;
   top: 30px;
   left: 192px;
-
 }
-
 
 .breadcrumbs {
   display: flex;
@@ -734,13 +723,19 @@ margin-bottom: 20px;
 
 .features {
   width: 560px;
+  display: flex;
+  flex-direction: column;
 }
 
 .features h2 {
   font-size: 30px;
   line-height: 30px;
+  font-weight: normal;
   color: #000000;
   text-transform: uppercase;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 25px;
 }
 
 .features-list {
@@ -748,6 +743,15 @@ margin-bottom: 20px;
   line-height: 24px;
   font-family: 'PT Sans', sans-serif;
   font-weight: normal;
+  margin-bottom: 0;
+}
+
+.features-item {
+  margin-bottom: 25px;
+}
+
+.features-list li:nth-child(2) {
+  margin-bottom: 18px;
 }
 
 .services {
@@ -755,13 +759,43 @@ margin-bottom: 20px;
   line-height: 24px;
   color: #000000;
   width: 320px;
+  padding-left: 33px;
 }
+
+.services .red-line {
+  position: absolute;
+  left: -33px;
+  top: 13px;
+  width: 25px;
+  height: 1px;
+  background-color: #ee3643;
+}
+
+.services li {
+  position: relative;
+  margin-bottom: 16px;
+  padding-left: 3px;
+}
+
+.services li:last-child {
+  margin-bottom: 37px;
+}
+
+.features .button {
+  width: 166px;
+  padding: 9px 27px;
+}
+
 
 .contacts h2 {
   font-size: 30px;
   line-height: 30px;
+  font-weight: normal;
   color: #000000;
   text-transform: uppercase;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 26px;
 }
 
 .contacts p {
@@ -769,6 +803,22 @@ margin-bottom: 20px;
   line-height: 24px;
   font-family: 'PT Sans', sans-serif;
   font-weight: normal;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 32px;
+}
+
+.contacts img {
+  width: 300px;
+  height: 158px;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 33px;
+}
+
+.contacts .button {
+  display: block;
+  padding: 10px 0;
 }
 
 .main-footer {

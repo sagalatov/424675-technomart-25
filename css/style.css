@@ -620,6 +620,15 @@ svg {
   font-size: 13px;
   line-height: 18px;
   text-transform: uppercase;
+  color: #000000;
+  position: relative;
+  margin-left: 55px;
+}
+
+.breadcrumbs svg {
+  position: absolute;
+  top: 22px;
+  left: -58px;
 }
 
 .breadcrumbs li:first-child {
@@ -628,10 +637,25 @@ svg {
 
 .breadcrumbs li {
   margin-right: 40px;
+  position: relative;
+}
+
+.breadcrumbs li::before {
+  content: "";
+  width: 8px;
+  height: 12px;
+  top: 3px;
+  left: -23px;
+  position: absolute;
+  display: block;
+  background-image: url(/img/icon-right-small.svg);
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .breadcrumbs li:last-child {
   margin-right: 0;
+  margin-right: 51px;
 }
 
 .breadcrumbs a {

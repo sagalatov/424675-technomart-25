@@ -530,7 +530,6 @@ svg {
 .categories-list li {
   margin-right: 20px;
   margin-bottom: 20px;
-
 }
 
 .categories-list li:nth-child(3n) {
@@ -700,6 +699,15 @@ svg {
   border-radius: 3px;
 }
 
+.pagination-list li:hover,
+.pagination-list li:focus {
+  border-color: #bdc6ca;
+}
+
+.pagination-list li:active {
+  border-color: #ee3643;
+}
+
 .pagination-item-current {
   background-color: #ee3643;
 }
@@ -827,7 +835,6 @@ svg {
   width: 60px;
   height: 59px;
   left: 159px;
-
 }
 
 .catalog-item .catalog-item-image {

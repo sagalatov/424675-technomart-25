@@ -84,6 +84,7 @@ body {
 
 .main-header {
   background-color: #f4f7f9;
+  min-height: 327px;
 }
 
 .main-header-logo {
@@ -293,6 +294,7 @@ svg {
   display: block;
   padding-left: 58px;
   margin-top: 8px;
+  color: #e9292a;
 }
 
 .phone-number svg {
@@ -306,8 +308,66 @@ svg {
   fill: #c5c5c5;
 }
 
-.phone-number:active path {
-  fill: #e9292a;
+.phone-number:hover path,
+.phone-number:focus path {
+  fill: #32425c;
+}
+
+.inner-page .user-navigation {
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+}
+
+.logout svg {
+  position: absolute;
+  top: 12px;
+  left: 288px;
+  width: 20px;
+  height: 17px;
+}
+
+.inner-page .user-name {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  background-color: #f4f7f9;
+  width: 318px;
+  height: 45px;
+  margin-bottom: 3px;
+}
+
+.user-name a {
+  padding: 12px 32px 12px 31px;
+}
+
+.user-name svg {
+  width: 20px;
+  height: 18px;
+  position: absolute;
+  top: 11px;
+  left: 33px;
+}
+
+.inner-page .user-orders {
+  margin-left: 38px;
+}
+
+.inner-page .personal-account {
+  margin-left: 32px;
+}
+
+.user-orders::after {
+  content: "";
+  position: absolute;
+  display: block;
+  top: 58px;
+  left: 127px;
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background-color: #32425c;
 }
 
 .user-navigation {
@@ -320,6 +380,12 @@ svg {
   background-color: #ffffff;
   font-size: 21px;
   line-height: 21px;
+}
+
+.user-orders a,
+.personal-account a {
+  font-size: 16px;
+  line-height: 18px;
 }
 
 .user-navigation a:focus,
@@ -379,11 +445,17 @@ svg {
 }
 
 .login:hover path,
-.logn:focus path {
+.login:focus path,
+.user-name svg:focus path,
+.user-name svg:hover path,
+.logout:hover path,
+.logout:focus path {
   fill: #32425c;
 }
 
-.login:active path {
+.login:active path,
+.user-name:active path,
+.logout:active path {
   fill: #c5c5c5;
 }
 

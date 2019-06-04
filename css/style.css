@@ -9,7 +9,7 @@
   overflow: hidden;
 }
 
-/*
+
 body>* {
   outline: 2px rgba(243, 15, 15, 0.3);
 }
@@ -33,7 +33,7 @@ body>*>*>*>*>* {
 body>*>*>*>*>*>* {
   outline: 1px solid rgb(100, 30, 255);
 }
-*/
+
 
 .reset-list {
   margin: 0;
@@ -57,11 +57,6 @@ body {
   background-color: #ffffff;
 }
 
-.modal-feedback,
-.modal-map,
-.modal-cart {
-  display: none;
-}
 
 .button {
   font: inherit;
@@ -207,8 +202,21 @@ a {
   background-color: #212a3a;
 }
 
-.search-form label {
+.search-form input {
   margin-left: 33px;
+  background-color: #293449;
+  border: none;
+  color: #000000;
+}
+
+.search-form input:focus{
+  background-color: #ffffff;
+  color: #000000;
+}
+
+input[type="search"],
+input[type="search"]::placeholder {
+  color: #ffffff;
 }
 
 svg {
@@ -228,6 +236,11 @@ svg {
   fill: #ffffff;
   opacity: 0.3;
 }
+
+.header-list li:first-child:active path {
+  fill: red;
+}
+
 
 .header-list .bookmarks {
   position: relative;
@@ -1226,3 +1239,96 @@ svg {
   font-size: 16px;
   line-height: 18px;
 }
+
+.modal-feedback {
+  width: 620px;
+  min-height: 430px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  margin-top: -215px;
+  margin-left: -310px;
+  border-top: 7px solid #ee3643;
+  padding-top: 55px;
+}
+
+.feedback-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.feedback-form p {
+  margin: 0;
+  padding: 0;
+}
+
+.feedback-form input[type="text"],
+.feedback-form input[type="email"] {
+  box-sizing: border-box;
+  width: 220px;
+  padding: 8px 16px;
+  font: inherit;
+  color: #a9a9a9;
+  border: 2px solid #dee3e4;
+  border-radius: 3px;
+  font-size: 13px;
+  line-height: 18px;
+}
+
+.feedback-form input:hover,
+.feedback-form input:focus {
+  border-color: #b5b5b5;
+}
+
+.feedback-form input:focus{
+  border-color: #ee3643;
+}
+
+
+.modal-map {
+  position: absolute;
+  display: none;
+  top: 50%;
+  left: 50%;
+  width: 940px;
+  height: 446px;
+  margin-top: -223px;
+  margin-left: -470px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+  background-image: url(/img/map.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.modal-map .modal-close {
+  position: absolute;
+  width: 22px;
+  height: 22px;
+  background-color: transparent;
+  top: 9px;
+  right: 18px;
+  border: 0;
+  cursor: pointer;
+  font-size: 0;
+}
+
+.modal-close::before,
+.modal-close::after {
+  content: "";
+  position: absolute;
+  width: 19px;
+  height: 3px;
+  background-color: #ee3643;
+}
+
+.modal-close::before {
+  transform: rotate(45deg);
+}
+
+.modal-close::after {
+  transform: rotate(-45deg);
+}
+
+
+
+

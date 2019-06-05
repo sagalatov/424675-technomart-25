@@ -688,14 +688,8 @@ svg {
   text-transform: uppercase;
   color: #000000;
   position: relative;
-  margin-left: 55px;
 }
 
-.breadcrumbs svg {
-  position: absolute;
-  top: 22px;
-  left: -58px;
-}
 
 .breadcrumbs li:first-child {
   margin-left: 54px;
@@ -704,6 +698,19 @@ svg {
 .breadcrumbs li {
   margin-right: 40px;
   position: relative;
+}
+
+.breadcrumbs::after {
+  content: "";
+  width: 14px;
+  height: 12px;
+  top: 24px;
+  left: 0px;
+  position: absolute;
+  display: block;
+  background-image: url(/img/icon-home.png);
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .breadcrumbs li::before {

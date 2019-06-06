@@ -9,6 +9,7 @@
   overflow: hidden;
 }
 
+/*
 body>* {
   outline: 2px rgba(243, 15, 15, 0.3);
 }
@@ -32,6 +33,7 @@ body>*>*>*>*>* {
 body>*>*>*>*>*>* {
   outline: 1px solid rgb(100, 30, 255);
 }
+*/
 
 .reset-list {
   margin: 0;
@@ -202,11 +204,18 @@ a {
   position: absolute;
   width: 17px;
   height: 17px;
-  top: 14px;
-  left: 12px;
-  background-image: url(/img/icon-search.png);
+  top: 16px;
+  left: 2px;
+  background-image: url(/img/icon-search.svg);
   background-position: center;
   background-repeat: no-repeat;
+  opacity: 0.3;
+}
+
+.header-list .search-form:hover::before,
+.header-list .search-form:focus::before,
+.header-list .search-form:active::before {
+  opacity: 1;
 }
 
 .search-form:hover,
@@ -252,9 +261,19 @@ svg {
   height: 15px;
   top: 14px;
   left: 12px;
-  background-image: url(/img/cart-icon.png);
+  background-image: url(/img/cart-icon.svg);
   background-position: center;
   background-repeat: no-repeat;
+  opacity: 0.3;
+}
+
+.header-list .full-cart:hover::before,
+.header-list .full-cart:focus::before,
+.header-list .full-cart:active::before,
+.header-list .cart:hover::before,
+.header-list .cart:focus::before,
+.header-list .cart:active::before {
+  opacity: 1;
 }
 
 .bookmarks {
@@ -268,9 +287,16 @@ svg {
   height: 15px;
   top: 14px;
   left: 7px;
-  background-image: url(/img/icon-bookmark.png);
+  background-image: url(/img/icon-bookmark.svg);
   background-position: center;
   background-repeat: no-repeat;
+  opacity: 0.3;
+}
+
+.header-list .bookmarks:hover::before,
+.header-list .bookmarks:focus::before,
+.header-list .bookmarks:active::before {
+  opacity: 1;
 }
 
 .header-middle-column {
@@ -341,7 +367,7 @@ svg {
   height: 19px;
   top: 10px;
   left: 0;
-  background-image: url(/img/icon-phone.png);
+  background-image: url(/img/icon-phone.svg);
   background-position: center;
   background-repeat: no-repeat;
 }
@@ -352,15 +378,31 @@ svg {
   position: relative;
 }
 
-.logout svg {
+.logout {
+  position: relative;
+}
+
+.logout::after {
+  content: "";
   position: absolute;
-  top: 12px;
-  left: 288px;
   width: 20px;
   height: 17px;
+  top: -35px;
+  left: 41px;
+  background-image: url(/img/icon-logout.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0.3;
+}
+
+.logout:hover::after,
+.logout:focus::after,
+.logout:active::after {
+  opacity: 1;
 }
 
 .inner-page .user-name {
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -375,12 +417,23 @@ svg {
   padding: 12px 32px 12px 31px;
 }
 
-.user-name svg {
+.user-name a::before {
+  content: "";
+  position: absolute;
   width: 20px;
   height: 18px;
-  position: absolute;
-  top: 11px;
+  top: 14px;
   left: 33px;
+  background-image: url(/img/icon-user.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0.3;
+}
+
+.user-name a:hover::before,
+.user-name a:focus::before,
+.user-name a:active::before {
+  opacity: 1;
 }
 
 .inner-page .user-orders {
@@ -443,6 +496,25 @@ svg {
   text-decoration: underline;
 }
 
+.login::before {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 18px;
+  top: 2px;
+  left: -10px;
+  background-image: url(/img/icon-login.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 1;
+}
+
+.login:hover::before,
+.login:focus::before,
+.login:active::before {
+  opacity: 0.3;
+}
+
 .login-link {
   display: flex;
   flex-direction: column;
@@ -464,32 +536,6 @@ svg {
 
 .login {
   position: relative;
-}
-
-.login svg {
-  top: 3px;
-  left: -9px;
-  width: 20px;
-  height: 17px;
-}
-
-.login path {
-  fill: #c5c5c5;
-}
-
-.login:hover path,
-.login:focus path,
-.user-name svg:focus path,
-.user-name svg:hover path,
-.logout:hover path,
-.logout:focus path {
-  fill: #32425c;
-}
-
-.login:active path,
-.user-name:active path,
-.logout:active path {
-  fill: #c5c5c5;
 }
 
 .registration-link {
@@ -620,7 +666,7 @@ svg {
   height: 65px;
   top: 31px;
   left: 214px;
-  background-image: url(/img/icon-1.png);
+  background-image: url(/img/icon-1.svg);
   background-position: center;
   background-repeat: no-repeat;
 }
@@ -632,7 +678,7 @@ svg {
   height: 61px;
   top: 31px;
   left: 197px;
-  background-image: url(/img/icon-2.png);
+  background-image: url(/img/icon-2.svg);
   background-position: center;
   background-repeat: no-repeat;
 }
@@ -644,7 +690,7 @@ svg {
   height: 62px;
   top: 31px;
   left: 192px;
-  background-image: url(/img/icon-3.png);
+  background-image: url(/img/icon-3.svg);
   background-position: center;
   background-repeat: no-repeat;
 }
@@ -653,14 +699,6 @@ svg {
   width: 300px;
   background-color: #3bbce3;
   position: relative;
-}
-
-.tools svg {
-  position: absolute;
-  width: 75px;
-  height: 61px;
-  top: 32px;
-  left: 197px;
 }
 
 .building-technology {
@@ -708,7 +746,7 @@ svg {
   left: 0px;
   position: absolute;
   display: block;
-  background-image: url(/img/icon-home.png);
+  background-image: url(/img/icon-home.svg);
   background-position: center;
   background-repeat: no-repeat;
 }
@@ -818,11 +856,21 @@ svg {
 }
 
 .filters {
+  position: relative;
   display: flex;
   width: 220px;
   flex-direction: column;
   margin-right: 20px;
   margin-top: 208px;
+}
+
+.filter::before {
+  position: absolute;
+  top: 240px;
+  content: "";
+  height: 1px;
+  width: 222px;
+  background-color: #c5c5c5;
 }
 
 .filters ul {
@@ -868,6 +916,7 @@ svg {
 }
 
 .catalog-item {
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -926,6 +975,7 @@ svg {
   background-repeat: no-repeat;
 }
 
+
 .catalog-item-price {
   margin: 0;
   padding: 0;
@@ -980,6 +1030,53 @@ svg {
 
 .catalog-list a {
   color: #000000;
+}
+
+.catalog-item .actions {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 218px;
+  height: 88px;
+  padding: 40px 0;
+
+  background-color: rgba(255, 255, 255, 0.9);
+  z-index: 10;
+}
+
+.catalog-item .actions .buy,
+.catalog-item .actions .bookmark {
+  display: block;
+  width: 129px;
+  margin: 0 auto;
+  margin-bottom: 7px;
+  padding: 7px 0;
+  background-color: #63a63e;
+  border: 3px solid #63a63e;
+  border-bottom-color: #367315;
+  border-radius: 3px;
+  color: white;
+  font-size: 14px;
+  font-weight: normal;
+  font-family: "Cuprum", sans-serif;
+  line-height: 18px;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.catalog-item .actions .bookmark {
+  color: #32425c;
+  background: white;
+  border-bottom-color: #63a63e;
+}
+
+.catalog-item .actions {
+  display: none;
+}
+
+.catalog-item:hover .actions {
+  display: block;
 }
 
 .catalog-item:hover,
@@ -1291,10 +1388,6 @@ svg {
 .footer-offer-list a {
   color: #ffd180;
   margin-right: 60px;
-}
-
-.footer-offer-list .special-offer {
-  margin-right: 0;
 }
 
 .footer-offer-list a:hover,

@@ -21,9 +21,10 @@
           </a>
           <ul class="header-list reset-list">
             <li>
-              <form class="search-form" action="https://echo.htmlacademy.ru" method="get">
-                <input aria-label="Поиск по сайту" type="search" name="search" value="" placeholder="Поиск:">
-              </form>
+              <form class="search-form" action="https://echo.htmlacademy.ru" method="post">
+                <input class="search-input" type="search" placeholder="Поиск:" id="header-search">
+                <label for="header-search"><span class="visually-hidden">Поиск</span></label>
+               </form>
             </li>
             <li><a class="bookmarks" href="#">Закладки: 0
               </a></li>
@@ -210,9 +211,11 @@
   <section class="modal-feedback">
     <h2 class="visually-hidden">Напишите нам</h2>
     <form class="feedback-form" action="https://echo.htmlacademy.ru" method="post">
-      <p>
+      <p class="first-column">
         <label for="user-name">Ваше имя:</label>
         <input id="user-name" type="text" name="user-name" value="" placeholder="Имя Фамилия">
+      </p>
+      <p class="second-column">
         <label for="user-email">Ваш e-mail:</label>
         <input id="user-email" type="email" name="email" value="" placeholder="email@example.com">
       </p>

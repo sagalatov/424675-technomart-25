@@ -218,12 +218,8 @@ a {
   opacity: 1;
 }
 
-.search-form:hover,
-.search-form:focus {
-  background-color: #212a3a;
-}
-
 .search-form input {
+  position: relative;
   margin-left: 33px;
   background-color: #293449;
   border: none;
@@ -1438,14 +1434,16 @@ svg {
 }
 
 .social-button {
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 41px;
-  height: 41px;
+  width: 40px;
+  height: 40px;
   border-radius: 50%;
   background-color: #212a3a;
   margin-left: 5px;
+  margin-top: 2px;
 }
 
 .footer-social a:focus,
@@ -1453,6 +1451,49 @@ svg {
 .footer-social a:focus {
   background-color: #ee3643;
 }
+
+.vk::before {
+  position: absolute;
+  content: "";
+  width: 26px;
+  height: 15px;
+  top: 14px;
+  left: 7px;
+  position: absolute;
+  display: block;
+  background-image: url(/img/icon-vk.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.fb::before {
+  position: absolute;
+  content: "";
+  width: 12px;
+  height: 22px;
+  top: 11px;
+  left: 13px;
+  position: absolute;
+  display: block;
+  background-image: url(/img/icon-fb.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.insta::before {
+  position: absolute;
+  content: "";
+  width: 21px;
+  height: 21px;
+  top: 10px;
+  left: 7px;
+  position: absolute;
+  display: block;
+  background-image: url(/img/icon-insta.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
 
 .feedback-column {
   display: flex;

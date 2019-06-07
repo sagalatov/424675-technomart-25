@@ -186,10 +186,6 @@ a {
   justify-content: space-between;
 }
 
-.header-list:first-child {
-  background-color: #212a3a;
-}
-
 .search-form {
   position: relative;
   font: inherit;
@@ -222,7 +218,6 @@ a {
   margin-left: 33px;
   background-color: #293449;
   border: none;
-  color: #000000;
 }
 
 .search-form input:focus {
@@ -230,7 +225,7 @@ a {
   color: #000000;
 }
 
-.search-input:focus + label::before {
+.search-input:focus+label::before {
   background-position: -2px 0;
   opacity: 1;
 }
@@ -1491,9 +1486,7 @@ input[type="search"]::placeholder {
 }
 
 
-.feedback-column {
-
-}
+.feedback-column {}
 
 .feedback-mail,
 .feedback-site {
@@ -1519,9 +1512,11 @@ input[type="search"]::placeholder {
 }
 
 .modal-feedback {
-  border: 1px solid black;
+  box-sizing: border-box;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  background-color: #ffffff;
   width: 620px;
-  min-height: 430px;
+  min-height: 423px;
   position: fixed;
   top: 50%;
   left: 50%;
@@ -1531,9 +1526,28 @@ input[type="search"]::placeholder {
   padding-top: 55px;
 }
 
+.modal-feedback .container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+  padding-left: 80px;
+  padding-right: 80px;
+}
+
+.modal-feedback button[type="submit"] {
+  width: 100%;
+  min-height: 38px;
+  margin-left: 80px;
+  margin-right: 80px;
+  border-radius: 3px;
+  padding: 0 20px;
+}
+
 .feedback-form {
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
 }
 
 .feedback-form p {
@@ -1541,6 +1555,41 @@ input[type="search"]::placeholder {
   flex-direction: column;
   margin: 0;
   padding: 0;
+  margin-bottom: 22px;
+}
+
+.feedback-form label {
+  margin-bottom: 10px;
+}
+
+.feedback-form .first-column {
+  width: 220px;
+}
+
+.feedback-form .second-column {
+  width: 220px;
+}
+
+.feedback-form .third-column {
+  width: 100%;
+  margin-bottom: 37px;
+}
+
+.feedback-form label[for="user-letter"] {
+  margin-bottom: 20px;
+}
+
+.feedback-form textarea[name="email-text"] {
+  min-height: 114px;
+}
+
+.feedback-form .bottom-column {
+  display: flex;
+  align-items: center;
+
+  background-color: #f4f4f4;
+  width: 100%;
+  min-height: 112px;
 }
 
 .feedback-form input[type="text"],
@@ -1551,7 +1600,7 @@ input[type="search"]::placeholder {
   font: inherit;
   color: #a9a9a9;
   border: 2px solid #dee3e4;
-  border-radius: 3px;
+  border-radius: 2px;
   font-size: 13px;
   line-height: 18px;
 }
@@ -1564,7 +1613,6 @@ input[type="search"]::placeholder {
 .feedback-form input:focus {
   border-color: #ee3643;
 }
-
 
 .modal-map {
   position: absolute;
@@ -1581,7 +1629,9 @@ input[type="search"]::placeholder {
   background-position: center;
 }
 
-.modal-map .modal-close {
+.modal-map .modal-close,
+.modal-feedback .modal-close,
+.modal-cart .modal-close {
   position: absolute;
   width: 22px;
   height: 22px;
@@ -1609,3 +1659,4 @@ input[type="search"]::placeholder {
 .modal-close::after {
   transform: rotate(-45deg);
 }
+

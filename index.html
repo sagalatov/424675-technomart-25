@@ -211,6 +211,7 @@
   <section class="modal-feedback">
     <h2 class="visually-hidden">Напишите нам</h2>
     <form class="feedback-form" action="https://echo.htmlacademy.ru" method="post">
+      <div class="container">
       <p class="first-column">
         <label for="user-name">Ваше имя:</label>
         <input id="user-name" type="text" name="user-name" value="" placeholder="Имя Фамилия">
@@ -219,12 +220,16 @@
         <label for="user-email">Ваш e-mail:</label>
         <input id="user-email" type="email" name="email" value="" placeholder="email@example.com">
       </p>
-      <p>
+      <p class="third-column">
         <label for="user-letter">Текст письма:</label>
         <textarea id="user-letter" name="email-text">В свободной форме</textarea>
       </p>
+    </div>
+    <div class="bottom-column">
       <button type="submit" class="button">Отправить</button>
+    </div>
       <button type="button" class="modal-close" aria-label="Закрыть модальное окно">Закрыть</button>
+
     </form>
   </section>
 

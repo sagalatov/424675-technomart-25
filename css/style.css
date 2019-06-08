@@ -813,7 +813,7 @@ input[type="search"]::placeholder {
   margin: 0;
   padding: 0;
   padding-left: 28px;
-  margin-bottom: 79px;
+  margin-bottom: 20px;
   min-height: 89px;
   font-size: 30px;
   line-height: 30px;
@@ -877,9 +877,9 @@ input[type="search"]::placeholder {
 }
 
 .about-product {
-background-color: #f4f7f9;
-min-height: 260px;
-width: 100%;
+  background-color: #f4f7f9;
+  min-height: 260px;
+  width: 100%;
 }
 
 .about-product h2,

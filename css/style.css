@@ -877,17 +877,31 @@ input[type="search"]::placeholder {
 }
 
 .about-product {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  min-height: 260px;
-  background-color: #f4f7f9;
+background-color: #f4f7f9;
+min-height: 260px;
+width: 100%;
 }
 
 .about-product h2,
 .about-product p {
   margin: 0;
   padding: 0;
+}
+
+.about-product h2 {
+  text-transform: uppercase;
+  font-weight: 400;
+  font-family: "Cuprum", sans-serif;
+  font-size: 30px;
+  line-height: 30px;
+  padding-top: 65px;
+  margin-bottom: 24px;
+}
+
+.about-product p {
+  font-size: 13px;
+  line-height: 24px;
+  font-family: 'PT Sans', sans-serif;
 }
 
 .filters {

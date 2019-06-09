@@ -143,7 +143,6 @@ a {
   width: 156px;
 }
 
-
 .header-list li:first-child {
   width: 270px;
 }
@@ -846,7 +845,6 @@ input[type="search"]::placeholder {
   border-radius: 2px;
 }
 
-
 .sort-list li:last-child {
   padding-left: 6px;
   padding-right: 14px;
@@ -1044,7 +1042,7 @@ input[type="search"]::placeholder {
 .filter::before {
   position: absolute;
   top: 191px;
-    left: -2px;
+  left: -2px;
   content: "";
   height: 1px;
   width: 222px;
@@ -1054,7 +1052,7 @@ input[type="search"]::placeholder {
 .filter::after {
   position: absolute;
   top: 454px;
-    left: -2px;
+  left: -2px;
   content: "";
   height: 1px;
   width: 222px;
@@ -1401,13 +1399,13 @@ input[type="search"]::placeholder {
 }
 
 .min-price::after {
-position: absolute;
-content: "";
-left: 105px;
-width: 10px;
-height: 1px;
-width: 10px;
-background-color: #444444;
+  position: absolute;
+  content: "";
+  left: 105px;
+  width: 10px;
+  height: 1px;
+  width: 10px;
+  background-color: #444444;
 }
 
 .product-filter .legend-item {
@@ -1683,16 +1681,15 @@ background-color: #444444;
 }
 
 .footer-nav-list a:hover,
-.footer-nav-list a:focus {
-
-}
+.footer-nav-list a:focus {}
 
 .footer-nav-list a:focus {
   text-decoration: underline;
 }
+
 .footer-nav-list a:active {
   color: rgba(241, 245, 247, 0.5);
-text-decoration: none;
+  text-decoration: none;
 }
 
 .footer-offer-list {
@@ -1977,7 +1974,6 @@ text-decoration: none;
   outline: 0;
   outline-offset: 0;
 }
-
 
 .feedback-form input:hover,
 .feedback-form input:focus {

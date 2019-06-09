@@ -35,6 +35,7 @@ body>*>*>*>*>*>* {
 }
 */
 
+
 .reset-list {
   margin: 0;
   padding: 0;
@@ -823,8 +824,131 @@ input[type="search"]::placeholder {
   text-transform: uppercase;
 }
 
+.sort-list {
+  display: flex;
+  align-items: center;
+  margin-bottom: 21px;
+  text-transform: uppercase;
+  font-size: 13px;
+  line-height: 18px;
+}
+
+.sort-list li {
+  display: flex;
+  align-items: center;
+  background-color: #f7f3ec;
+  min-height: 38px;
+  padding-left: 18px;
+  border-radius: 2px;
+}
+
+.sort-list li:last-child {
+  padding-left: 6px;
+  padding-right: 14px;
+}
+
+.sort-list li:first-child {
+  width: 200px;
+  margin-right: 22px;
+  min-height: 38px;
+  border-radius: 2px;
+}
+
+.sort-list li:nth-child(2) {
+  width: 204px;
+}
+
+.sort-list .price {
+  width: 80px;
+  margin-right: 25px;
+}
+
+.sort-list a {
+  list-style: none;
+  color: #000000;
+}
+
+.sort-list .type {
+  width: 100px;
+}
+
+.sort-list .function {
+  width: 140px;
+}
+
+
 .catalog-column {
   display: flex;
+}
+
+.sort-list .up,
+.sort-list .down {
+  position: relative;
+  padding: 0;
+  margin: 0;
+  width: 20px;
+  padding-right: 1px;
+}
+
+.sort-list .price,
+.sort-list .type,
+.sort-list .function {
+  color: #c4c1bb;
+  text-decoration: underline dashed red;
+}
+
+.sort-list .price:hover,
+.sort-list .price:focus,
+.sort-list .type:hover,
+.sort-list .type:focus,
+.sort-list .function:hover,
+.sort-list .function:focus {
+  color: #000000;
+}
+
+.sort-list .current {
+  color: #ee3643;
+  text-decoration: none;
+}
+
+.sort-list .current:hover,
+.sort-list .current:focus {
+  color: #ee3643;
+}
+
+.sort-list .up::before {
+  position: absolute;
+  content: "";
+  width: 11px;
+  height: 11px;
+  background-image: url("/img/sort-sprite.png");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  left: -1px;
+  top: -6px;
+}
+
+.up:focus::before,
+.up:hover::before {
+  background-position: -12px 0;
+  transform: rotate(180deg);
+}
+
+.sort-list .down::before {
+  position: absolute;
+  content: "";
+  width: 11px;
+  height: 11px;
+  background-image: url("/img/sort-sprite.png");
+  background-repeat: no-repeat;
+  background-position: -24px 0;
+  left: 4px;
+  top: -6px;
+}
+
+.down:focus::before,
+.down:hover::before {
+  background-position: -12px 0;
 }
 
 .pagination-list {
@@ -991,7 +1115,6 @@ input[type="search"]::placeholder {
   font-size: 18px;
   line-height: 20px;
   margin-bottom: 12px;
-
 }
 
 .catalog-item:nth-child(3n) h3 {

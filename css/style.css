@@ -9,7 +9,6 @@
   overflow: hidden;
 }
 
-
 body>* {
   outline: 2px rgba(243, 15, 15, 0.3);
 }
@@ -660,12 +659,12 @@ input[type="search"]::placeholder {
 }
 
 .categories a:focus,
-.categories a:hover{
-background-color: rgba(0, 0, 0, 0.200);
+.categories a:hover {
+  background-color: rgba(0, 0, 0, 0.200);
 }
 
-.categories a:active{
-background-color: rgba(0, 0, 0, 0.300);
+.categories a:active {
+  background-color: rgba(0, 0, 0, 0.300);
 }
 
 .categories p {
@@ -680,6 +679,116 @@ background-color: rgba(0, 0, 0, 0.300);
   margin-left: 24px;
   margin-bottom: 15px;
   margin-right: 30px;
+}
+
+.discount {
+  width: 300px;
+  background-color: #8ed78f;
+  position: relative;
+}
+
+.discount::before {
+  content: "";
+  position: absolute;
+  width: 59px;
+  height: 72px;
+  top: 26px;
+  left: 196px;
+  background-image: url(/img/icon-4.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.delivery {
+  width: 300px;
+  background-color: #ffc047;
+  position: relative;
+}
+
+.delivery::before {
+  content: "";
+  position: absolute;
+  width: 78px;
+  height: 63px;
+  top: 33px;
+  left: 191px;
+  background-image: url(/img/icon-5.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.materials {
+  width: 300px;
+  background-color: #ffbf47;
+  position: relative;
+}
+
+.materials::after {
+  content: "";
+  position: absolute;
+  width: 60px;
+  height: 59px;
+  top: 0px;
+  left: 241px;
+  background-image: url(/img/new-flag.png);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.materials::before {
+  content: "";
+  position: absolute;
+  width: 44px;
+  height: 65px;
+  top: 31px;
+  left: 214px;
+  background-image: url(/img/icon-1.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.tools::before {
+  content: "";
+  position: absolute;
+  width: 75px;
+  height: 61px;
+  top: 31px;
+  left: 197px;
+  background-image: url(/img/icon-2.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.building-technology::before {
+  content: "";
+  position: absolute;
+  width: 78px;
+  height: 62px;
+  top: 31px;
+  left: 192px;
+  background-image: url(/img/icon-3.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.tools {
+  width: 300px;
+  background-color: #3bbce3;
+  position: relative;
+}
+
+.building-technology {
+  width: 300px;
+  background-color: #dc91d8;
+  position: relative;
+}
+
+.building-technology svg {
+  position: absolute;
+  width: 78px;
+  height: 62px;
+  top: 30px;
+  left: 192px;
 }
 
 .promo-column {
@@ -752,7 +861,11 @@ background-color: rgba(0, 0, 0, 0.300);
   margin-bottom: 20px;
 }
 
-.stock  a {
+.stock-list li:last-child {
+  margin-bottom: 0;
+}
+
+.stock a {
   display: block;
   text-align: center;
   width: 122px;
@@ -768,15 +881,15 @@ background-color: rgba(0, 0, 0, 0.300);
 }
 
 .stock a:focus,
-.stock a:hover{
-background-color: rgba(0, 0, 0, 0.200);
+.stock a:hover {
+  background-color: rgba(0, 0, 0, 0.200);
 }
 
-.stock  a:active{
-background-color: rgba(0, 0, 0, 0.300);
+.stock a:active {
+  background-color: rgba(0, 0, 0, 0.300);
 }
 
-.stock  p {
+.stock p {
   display: block;
   font-size: 24px;
   line-height: 30px;
@@ -790,115 +903,47 @@ background-color: rgba(0, 0, 0, 0.300);
   margin-right: 30px;
 }
 
-.discount {
-  width: 300px;
-  background-color: #8ed78f;
-  position: relative;
+.popular-goods {
+  min-height: 89px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #f9f5f0;
+  border-radius: 3px;
+  padding: 0 24px 0 28px;
+  margin-bottom: 21px;
 }
 
-.discount::before {
-  content: "";
-  position: absolute;
-  width: 59px;
-  height: 72px;
-  top: 26px;
-  left: 196px;
-  background-image: url(/img/icon-4.svg);
-  background-position: center;
-  background-repeat: no-repeat;
+.popular-goods p {
+  font-size: 30px;
+  line-height: 30px;
+  color: #32425c;
+  text-transform: uppercase;
 }
 
-.delivery {
-  width: 300px;
-  background-color: #ffc047;
-  position: relative;
+.popular-goods .all-goods {
+  padding: 10px 55px;
+  margin-left: 2px;
 }
 
-.delivery::before {
-  content: "";
-  position: absolute;
-  width: 78px;
-  height: 63px;
-  top: 33px;
-  left: 191px;
-  background-image: url(/img/icon-5.svg);
-  background-position: center;
-  background-repeat: no-repeat;
+.popular-catalog ul {
+  width: 940px;
 }
 
-.materials {
-  width: 300px;
-  background-color: #ffbf47;
-  position: relative;
+.popular-catalog .catalog-item:nth-child(3n) {
+  margin-right: 20px;
 }
 
-
-.materials::after {
-  content: "";
-  position: absolute;
-  width: 60px;
-  height: 59px;
-  top: 0px;
-  left: 241px;
-  background-image: url(/img/new-flag.png);
-  background-position: center;
-  background-repeat: no-repeat;
+.popular-catalog .catalog-item:nth-child(4n) {
+  margin-right: 0;
 }
 
-.materials::before {
-  content: "";
-  position: absolute;
-  width: 44px;
-  height: 65px;
-  top: 31px;
-  left: 214px;
-  background-image: url(/img/icon-1.svg);
-  background-position: center;
-  background-repeat: no-repeat;
+.popular-catalog .catalog-item:nth-child(3n) h3 {
+  margin-bottom: 12px;
 }
 
-.tools::before {
-  content: "";
-  position: absolute;
-  width: 75px;
-  height: 61px;
-  top: 31px;
-  left: 197px;
-  background-image: url(/img/icon-2.svg);
-  background-position: center;
-  background-repeat: no-repeat;
-}
-
-.building-technology::before {
-  content: "";
-  position: absolute;
-  width: 78px;
-  height: 62px;
-  top: 31px;
-  left: 192px;
-  background-image: url(/img/icon-3.svg);
-  background-position: center;
-  background-repeat: no-repeat;
-}
-
-.tools {
-  width: 300px;
-  background-color: #3bbce3;
-  position: relative;
-}
-
-.building-technology {
-  width: 300px;
-  background-color: #dc91d8;
-  position: relative;
-}
-
-.building-technology svg {
-  position: absolute;
-  width: 78px;
-  height: 62px;
-  top: 30px;
-  left: 192px;
+.popular-catalog .catalog-item:nth-child(4n) h3 {
+  margin-bottom: 45px;
 }
 
 .breadcrumbs {
@@ -1303,7 +1348,28 @@ background-color: rgba(0, 0, 0, 0.300);
   display: none;
 }
 
+.popular-catalog .catalog-item:last-child::after {
+  display: block;
+}
+
+
 .catalog-item:nth-child(2n+1)::after {
+  content: "";
+  position: absolute;
+  width: 60px;
+  height: 59px;
+  top: 0px;
+  left: 160px;
+  background-image: url(/img/new-flag.png);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.popular-catalog .catalog-item:nth-child(2n+1)::after {
+  display: none;
+}
+
+.popular-catalog .catalog-item:nth-child(4)::after {
   content: "";
   position: absolute;
   width: 60px;

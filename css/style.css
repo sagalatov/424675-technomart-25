@@ -682,14 +682,20 @@ background-color: rgba(0, 0, 0, 0.300);
   margin-right: 30px;
 }
 
+.promo-column {
+  display: flex;
+}
+
 .slider {
   display: flex;
   position: relative;
   justify-content: space-between;
   align-items: center;
-  flex-wrap: wrap;
-  width: 620px;
-  height: 266px;
+  min-width: 620px;
+  max-width: 620px;
+  min-height: 266px;
+  max-height: 266px;
+  margin-right: 20px;
   margin-bottom: 53px;
   background-image: url(/img/slider-image.png);
   background-repeat: no-repeat;
@@ -735,11 +741,97 @@ background-color: rgba(0, 0, 0, 0.300);
   background: none;
 }
 
+.stock-list {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.stock-list li {
+  margin-right: 0;
+  margin-bottom: 20px;
+}
+
+.stock  a {
+  display: block;
+  text-align: center;
+  width: 122px;
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 18px;
+  color: #ffffff;
+  padding: 8px 5px;
+  background-color: rgba(0, 0, 0, 0.100);
+  border-radius: 2px;
+  margin-left: 25px;
+  margin-bottom: 23px;
+}
+
+.stock a:focus,
+.stock a:hover{
+background-color: rgba(0, 0, 0, 0.200);
+}
+
+.stock  a:active{
+background-color: rgba(0, 0, 0, 0.300);
+}
+
+.stock  p {
+  display: block;
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: bold;
+  color: #ffffff;
+  margin: 0;
+  padding: 0;
+  margin-top: 21px;
+  margin-left: 22px;
+  margin-bottom: 15px;
+  margin-right: 30px;
+}
+
+.discount {
+  width: 300px;
+  background-color: #8ed78f;
+  position: relative;
+}
+
+.discount::before {
+  content: "";
+  position: absolute;
+  width: 59px;
+  height: 72px;
+  top: 26px;
+  left: 196px;
+  background-image: url(/img/icon-4.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.delivery {
+  width: 300px;
+  background-color: #ffc047;
+  position: relative;
+}
+
+.delivery::before {
+  content: "";
+  position: absolute;
+  width: 78px;
+  height: 63px;
+  top: 33px;
+  left: 191px;
+  background-image: url(/img/icon-5.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
 .materials {
   width: 300px;
   background-color: #ffbf47;
   position: relative;
 }
+
 
 .materials::after {
   content: "";

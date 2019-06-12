@@ -975,7 +975,7 @@ input[type="search"]::placeholder {
 .logo-list {
   display: flex;
   flex-wrap: wrap;
-  margin-bottom: 65px;
+  margin-bottom: 62px;
 }
 
 .logo-list li {
@@ -1027,16 +1027,29 @@ input[type="search"]::placeholder {
 
 .services-description {
   min-height: 522px;
-  width: 1200px
+  background-color: #f4f7f9;
+  margin-bottom: 79px;
 }
 
+.services-description .services-header {
+  display: flex;
+}
+
+.services-description h2 {
+  font-family: 'Cuprum', 'Arial Narrow', sans-serif;
+  font-weight: normal;
+  font-size: 30px;
+  line-height: 30px;
+  color: #000000;
+  text-transform: uppercase;
+}
 
 .breadcrumbs {
   display: flex;
   align-items: center;
   background-color: #ffffff;
   min-height: 60px;
-  font-family: 'PT Sans', sans-serif;
+  font-family: 'PT Sans', 'Arial Narrow', sans-serif;
   font-size: 13px;
   line-height: 18px;
   text-transform: uppercase;
@@ -1116,7 +1129,7 @@ input[type="search"]::placeholder {
   line-height: 18px;
   font-size: 13px;
   line-height: 18px;
-  font-family: 'PTSans-Regular', 'Arial Narrow', sans-serif;
+  font-family: 'PT Sans', 'Arial Narrow', sans-serif;
 }
 
 .sort-list li {
@@ -1268,7 +1281,7 @@ input[type="search"]::placeholder {
 .pagination-list a {
   font-size: 13px;
   line-height: 18px;
-  font-family: 'PTSans-Regular', 'Arial Narrow', sans-serif;
+  font-family: 'PT Sans', 'Arial Narrow', sans-serif;
   color: #000000;
 }
 
@@ -1300,7 +1313,7 @@ input[type="search"]::placeholder {
 .about-product h2 {
   text-transform: uppercase;
   font-weight: 400;
-  font-family: "Cuprum", sans-serif;
+  font-family: 'Cuprum', 'Arial Narrow', sans-serif;
   font-size: 30px;
   line-height: 30px;
   padding-top: 65px;
@@ -1310,7 +1323,7 @@ input[type="search"]::placeholder {
 .about-product p {
   font-size: 13px;
   line-height: 24px;
-  font-family: 'PT Sans', sans-serif;
+  font-family: 'PT Sans', 'Arial Narrow', sans-serif;
 }
 
 .filters {
@@ -1354,7 +1367,7 @@ input[type="search"]::placeholder {
 }
 
 .filter-button {
-  font-family: 'PT Sans', sans-serif;
+  font-family: 'PT Sans', 'Arial Narrow', sans-serif;
   font-size: 13px;
   line-height: 18px;
   text-align: center;
@@ -1513,7 +1526,7 @@ input[type="search"]::placeholder {
   flex-wrap: wrap;
   justify-content: space-between;
   margin-bottom: 32px;
-  font-family: 'PT Sans', sans-serif;
+  font-family: 'PT Sans', 'Arial Narrow', sans-serif;
   font-size: 18px;
   line-height: 20px;
 }
@@ -1548,7 +1561,7 @@ input[type="search"]::placeholder {
   color: white;
   font-size: 14px;
   font-weight: normal;
-  font-family: "Cuprum", sans-serif;
+  font-family: 'Cuprum', 'Arial Narrow', sans-serif;
   line-height: 18px;
   text-decoration: none;
   text-transform: uppercase;
@@ -1597,7 +1610,7 @@ input[type="search"]::placeholder {
 }
 
 .catalog-item-price {
-  font-family: 'PT Sans', sans-serif;
+  font-family: 'PT Sans', 'Arial Narrow', sans-serif;
   font-size: 17px;
   line-height: 18px;
   font-weight: bold;
@@ -1612,7 +1625,7 @@ input[type="search"]::placeholder {
 .price-filter .legend-item {
   font-size: 17px;
   line-height: 22px;
-  font-family: 'PT Sans', sans-serif;
+  font-family: 'PT Sans', 'Arial Narrow', sans-serif;
   font-weight: bold;
   text-transform: uppercase;
   margin-bottom: 17px;
@@ -1678,7 +1691,7 @@ input[type="search"]::placeholder {
   min-height: 40px;
   font-size: 17px;
   line-height: 18px;
-  font-family: 'PTSans-Regular', 'Arial Narrow', sans-serif;
+  font-family: 'PT Sans', 'Arial Narrow', sans-serif;
 }
 
 .price-range p {
@@ -1715,7 +1728,7 @@ input[type="search"]::placeholder {
 .product-filter .legend-item {
   font-size: 17px;
   line-height: 22px;
-  font-family: 'PT Sans', sans-serif;
+  font-family: 'PT Sans', 'Arial Narrow', sans-serif;
   font-weight: bold;
   text-transform: uppercase;
   margin-bottom: 16px;
@@ -1760,7 +1773,7 @@ input[type="search"]::placeholder {
 .product-filter ul {
   font-size: 15px;
   line-height: 20px;
-  font-family: 'PT Sans', sans-serif;
+  font-family: 'PT Sans', 'Arial Narrow', sans-serif;
   font-weight: normal;
   text-transform: uppercase;
 }
@@ -1833,7 +1846,7 @@ input[type="search"]::placeholder {
 .features-list {
   font-size: 13px;
   line-height: 24px;
-  font-family: 'PT Sans', sans-serif;
+  font-family: 'PT Sans', 'Arial Narrow', sans-serif;
   font-weight: normal;
   margin-bottom: 0;
 }
@@ -1894,7 +1907,7 @@ input[type="search"]::placeholder {
 .contacts p {
   font-size: 13px;
   line-height: 24px;
-  font-family: 'PT Sans', sans-serif;
+  font-family: 'PT Sans', 'Arial Narrow', sans-serif;
   font-weight: normal;
   margin: 0;
   padding: 0;

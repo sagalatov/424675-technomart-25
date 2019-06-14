@@ -2472,7 +2472,7 @@ input[type="search"]::placeholder {
 }
 
 .modal-cart {
-  display: block;
+  display: none;
   box-sizing: border-box;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   background-color: #ffffff;

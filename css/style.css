@@ -8,6 +8,7 @@
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+
 /*
 body>* {
   outline: 2px rgba(243, 15, 15, 0.3);
@@ -1000,7 +1001,7 @@ input[type="search"]::placeholder {
   background: rgba(255, 255, 255, 0.6);
 }
 
- .logo-list li:active::after {
+.logo-list li:active::after {
   display: block;
 }
 
@@ -2425,9 +2426,15 @@ input[type="search"]::placeholder {
   margin-top: -223px;
   margin-left: -470px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-  background-image: url(/img/map.jpg);
+  background-image: url(/img/bigmap.jpg);
   background-repeat: no-repeat;
   background-position: center;
+}
+
+.modal-map iframe {
+  position: relative;
+  z-index: 2;
+  border: none;
 }
 
 .modal-map .modal-close,
@@ -2453,6 +2460,7 @@ input[type="search"]::placeholder {
   width: 19px;
   height: 3px;
   background-color: #ee3643;
+  z-index: 3;
 }
 
 .modal-close::before {
@@ -2580,6 +2588,7 @@ input[type="search"]::placeholder {
 }
 
 @keyframes shake {
+
   0%,
   100% {
     transform: translateX(0);
@@ -2600,4 +2609,3 @@ input[type="search"]::placeholder {
     transform: translateX(10px);
   }
 }
-

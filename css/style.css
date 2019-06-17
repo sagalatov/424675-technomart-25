@@ -9,32 +9,6 @@
   overflow: hidden;
 }
 
-/*
-body>* {
-  outline: 2px rgba(243, 15, 15, 0.3);
-}
-
-body>*>* {
-  outline: 2x solid rgb(255, 255, 0);
-}
-
-body>*>*>* {
-  outline: 2px solid rgb(0, 255, 0);
-}
-
-body>*>*>*>* {
-  outline: 2px solid rgb(4, 0, 255);
-}
-
-body>*>*>*>*>* {
-  outline: 2px solid rgb(200, 30, 255);
-}
-
-body>*>*>*>*>*>* {
-  outline: 2px solid rgb(100, 30, 255);
-}
-*/
-
 .reset-list {
   margin: 0;
   padding: 0;
@@ -55,6 +29,10 @@ body {
   font-weight: 400;
   color: #000000;
   background-color: #ffffff;
+}
+
+a {
+  text-decoration: none;
 }
 
 .button {
@@ -122,10 +100,6 @@ body {
 
 .main-header-logo:active {
   background-color: #ba2732;
-}
-
-a {
-  text-decoration: none;
 }
 
 .header-top {
@@ -222,7 +196,7 @@ a {
   height: 17px;
   top: 14px;
   left: 7px;
-  background-image: url(/img/search-sprite.png);
+  background-image: url(../img/search-sprite.png);
   background-position: center;
   background-repeat: no-repeat;
   opacity: 0.5;
@@ -272,7 +246,7 @@ input[type="search"]::placeholder {
   height: 15px;
   top: 15px;
   left: 18px;
-  background-image: url(/img/cart-icon.svg);
+  background-image: url(../img/cart-icon.svg);
   background-position: center;
   background-repeat: no-repeat;
   opacity: 0.3;
@@ -302,7 +276,7 @@ input[type="search"]::placeholder {
   height: 15px;
   top: 15px;
   left: 16px;
-  background-image: url(/img/icon-bookmark.svg);
+  background-image: url(../img/icon-bookmark.svg);
   background-position: center;
   background-repeat: no-repeat;
   opacity: 0.3;
@@ -386,7 +360,7 @@ input[type="search"]::placeholder {
   height: 19px;
   top: 10px;
   left: 13px;
-  background-image: url(/img/icon-phone.svg);
+  background-image: url(../img/icon-phone.svg);
   background-position: center;
   background-repeat: no-repeat;
 }
@@ -408,7 +382,7 @@ input[type="search"]::placeholder {
   height: 17px;
   top: -37px;
   left: 44px;
-  background-image: url(/img/icon-logout.svg);
+  background-image: url(../img/icon-logout.svg);
   background-position: center;
   background-repeat: no-repeat;
   opacity: 0.3;
@@ -445,7 +419,7 @@ input[type="search"]::placeholder {
   height: 18px;
   top: 12px;
   left: 14px;
-  background-image: url(/img/icon-user.svg);
+  background-image: url(../img/icon-user.svg);
   background-position: center;
   background-repeat: no-repeat;
   opacity: 0.3;
@@ -535,7 +509,7 @@ input[type="search"]::placeholder {
   height: 18px;
   top: 2px;
   left: -10px;
-  background-image: url(/img/icon-login.svg);
+  background-image: url(../img/icon-login.svg);
   background-position: center;
   background-repeat: no-repeat;
   opacity: 0.3;
@@ -695,7 +669,7 @@ input[type="search"]::placeholder {
   height: 72px;
   top: 26px;
   left: 196px;
-  background-image: url(/img/icon-4.svg);
+  background-image: url(../img/icon-4.svg);
   background-position: center;
   background-repeat: no-repeat;
 }
@@ -713,7 +687,7 @@ input[type="search"]::placeholder {
   height: 63px;
   top: 33px;
   left: 191px;
-  background-image: url(/img/icon-5.svg);
+  background-image: url(../img/icon-5.svg);
   background-position: center;
   background-repeat: no-repeat;
 }
@@ -731,7 +705,7 @@ input[type="search"]::placeholder {
   height: 59px;
   top: 0px;
   left: 241px;
-  background-image: url(/img/new-flag.png);
+  background-image: url(../img/new-flag.png);
   background-position: center;
   background-repeat: no-repeat;
 }
@@ -743,7 +717,7 @@ input[type="search"]::placeholder {
   height: 65px;
   top: 31px;
   left: 214px;
-  background-image: url(/img/icon-1.svg);
+  background-image: url(../img/icon-1.svg);
   background-position: center;
   background-repeat: no-repeat;
 }
@@ -755,7 +729,7 @@ input[type="search"]::placeholder {
   height: 61px;
   top: 31px;
   left: 197px;
-  background-image: url(/img/icon-2.svg);
+  background-image: url(../img/icon-2.svg);
   background-position: center;
   background-repeat: no-repeat;
 }
@@ -767,7 +741,7 @@ input[type="search"]::placeholder {
   height: 62px;
   top: 31px;
   left: 192px;
-  background-image: url(/img/icon-3.svg);
+  background-image: url(../img/icon-3.svg);
   background-position: center;
   background-repeat: no-repeat;
 }
@@ -807,7 +781,7 @@ input[type="search"]::placeholder {
   max-height: 266px;
   margin-right: 20px;
   margin-bottom: 53px;
-  background-image: url(/img/slider-image.png);
+  background-image: url(../img/slider-image.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: 620px 266px;
@@ -827,7 +801,7 @@ input[type="search"]::placeholder {
   position: absolute;
   width: 100px;
   height: 50px;
-  background-image: url(/img/icon-left.svg);
+  background-image: url(../img/icon-left.svg);
   background-position: center;
   background-repeat: no-repeat;
   top: 110px;
@@ -841,7 +815,7 @@ input[type="search"]::placeholder {
   height: 50px;
   top: 110px;
   left: 539px;
-  background-image: url(/img/icon-right.svg);
+  background-image: url(../img/icon-right.svg);
   background-position: center;
   background-repeat: no-repeat;
 }
@@ -1086,7 +1060,7 @@ input[type="search"]::placeholder {
   content: "";
   width: 10px;
   height: 279px;
-  background-image: url(/img/divider.png);
+  background-image: url(../img/divider.png);
   background-position: center;
   background-repeat: no-repeat;
 }
@@ -1157,7 +1131,7 @@ input[type="search"]::placeholder {
   content: "";
   width: 468px;
   height: 261px;
-  background-image: url(/img/delivery.png);
+  background-image: url(../img/delivery.png);
   background-position: center;
   background-repeat: no-repeat;
 }
@@ -1192,7 +1166,7 @@ input[type="search"]::placeholder {
   left: 0px;
   position: absolute;
   display: block;
-  background-image: url(/img/icon-home.svg);
+  background-image: url(../img/icon-home.svg);
   background-position: center;
   background-repeat: no-repeat;
 }
@@ -1205,7 +1179,7 @@ input[type="search"]::placeholder {
   left: -23px;
   position: absolute;
   display: block;
-  background-image: url(/img/icon-right-small.svg);
+  background-image: url(../img/icon-right-small.svg);
   background-position: center;
   background-repeat: no-repeat;
 }
@@ -1337,7 +1311,7 @@ input[type="search"]::placeholder {
   content: "";
   width: 11px;
   height: 11px;
-  background-image: url("/img/sort-sprite.png");
+  background-image: url("../img/sort-sprite.png");
   background-repeat: no-repeat;
   background-position: 0 0;
   left: 2px;
@@ -1355,7 +1329,7 @@ input[type="search"]::placeholder {
   content: "";
   width: 11px;
   height: 11px;
-  background-image: url("/img/sort-sprite.png");
+  background-image: url("../img/sort-sprite.png");
   background-repeat: no-repeat;
   background-position: -24px 0;
   left: 7px;
@@ -1575,7 +1549,7 @@ input[type="search"]::placeholder {
   height: 59px;
   top: 0px;
   left: 160px;
-  background-image: url(/img/new-flag.png);
+  background-image: url(../img/new-flag.png);
   background-position: center;
   background-repeat: no-repeat;
 }
@@ -1591,7 +1565,7 @@ input[type="search"]::placeholder {
   height: 59px;
   top: 0px;
   left: 160px;
-  background-image: url(/img/new-flag.png);
+  background-image: url(../img/new-flag.png);
   background-position: center;
   background-repeat: no-repeat;
 }
@@ -1626,7 +1600,7 @@ input[type="search"]::placeholder {
   content: "";
   width: 141px;
   height: 38px;
-  background-image: url(/img/item-button.svg);
+  background-image: url(../img/item-button.svg);
   background-repeat: no-repeat;
   background-position: center;
   top: -5px;
@@ -1659,7 +1633,6 @@ input[type="search"]::placeholder {
   width: 218px;
   height: 88px;
   padding: 40px 0;
-
   background-color: rgba(255, 255, 255, 0.9);
   z-index: 10;
 }
@@ -1782,7 +1755,7 @@ input[type="search"]::placeholder {
   position: absolute;
   width: 20px;
   height: 22px;
-  background-image: url("/img/filter-button.svg");
+  background-image: url("../img/filter-button.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
   left: -9px;
@@ -1794,7 +1767,7 @@ input[type="search"]::placeholder {
   position: absolute;
   width: 20px;
   height: 22px;
-  background-image: url("/img/filter-button.svg");
+  background-image: url("../img/filter-button.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
   left: 130px;
@@ -1863,7 +1836,7 @@ input[type="search"]::placeholder {
   position: absolute;
   width: 27px;
   height: 23px;
-  background-image: url("/img/checkbox-off.png");
+  background-image: url("../img/checkbox-off.png");
   background-repeat: no-repeat;
   background-position: 0 0;
   left: -35px;
@@ -1877,7 +1850,7 @@ input[type="search"]::placeholder {
   left: -35px;
   width: 27px;
   height: 23px;
-  background-image: url("/img/checkbox-on.png");
+  background-image: url("../img/checkbox-on.png");
   background-repeat: no-repeat;
   background-position: 0 0;
 }
@@ -1902,7 +1875,7 @@ input[type="search"]::placeholder {
   left: -36px;
   width: 25px;
   height: 25px;
-  background-image: url("/img/radio-off.png");
+  background-image: url("../img/radio-off.png");
   background-repeat: no-repeat;
   background-position: 0 0;
 }
@@ -1914,7 +1887,7 @@ input[type="search"]::placeholder {
   left: -36px;
   width: 25px;
   height: 25px;
-  background-image: url("/img/radio-on.png");
+  background-image: url("../img/radio-on.png");
   background-repeat: no-repeat;
   background-position: 0 0;
 }
@@ -2210,7 +2183,7 @@ input[type="search"]::placeholder {
   left: 5px;
   position: absolute;
   display: block;
-  background-image: url(/img/icon-vk.svg);
+  background-image: url(../img/icon-vk.svg);
   background-position: center;
   background-repeat: no-repeat;
 }
@@ -2224,7 +2197,7 @@ input[type="search"]::placeholder {
   left: 13px;
   position: absolute;
   display: block;
-  background-image: url(/img/icon-fb.svg);
+  background-image: url(../img/icon-fb.svg);
   background-position: center;
   background-repeat: no-repeat;
 }
@@ -2238,7 +2211,7 @@ input[type="search"]::placeholder {
   left: 7px;
   position: absolute;
   display: block;
-  background-image: url(/img/icon-insta.svg);
+  background-image: url(../img/icon-insta.svg);
   background-position: center;
   background-repeat: no-repeat;
 }
@@ -2426,7 +2399,7 @@ input[type="search"]::placeholder {
   margin-top: -223px;
   margin-left: -470px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-  background-image: url(/img/bigmap.jpg);
+  background-image: url(../img/bigmap.jpg);
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -2506,7 +2479,7 @@ input[type="search"]::placeholder {
   height: 66px;
   top: 46px;
   left: 80px;
-  background-image: url(/img/modal-check.svg);
+  background-image: url(../img/modal-check.svg);
   background-repeat: no-repeat;
   background-position: center;
 }

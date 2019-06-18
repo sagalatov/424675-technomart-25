@@ -705,7 +705,7 @@ input[type="search"]::placeholder {
   height: 59px;
   top: 0px;
   left: 241px;
-  background-image: url(../img/new-flag.png);
+  background-image: url(../img/new-flag.svg);
   background-position: center;
   background-repeat: no-repeat;
 }
@@ -996,9 +996,6 @@ input[type="search"]::placeholder {
   box-shadow: 0px 10px 25px 0 rgba(41, 52, 73, 0.3);
 }
 
-
-
-
 .logo-list li:nth-child(4n) {
   margin-right: 0;
 }
@@ -1131,7 +1128,7 @@ input[type="search"]::placeholder {
   content: "";
   width: 468px;
   height: 261px;
-  background-image: url(../img/delivery.png);
+  background-image: url(/img/delivery.png);
   background-position: center;
   background-repeat: no-repeat;
 }
@@ -1836,7 +1833,7 @@ input[type="search"]::placeholder {
   position: absolute;
   width: 27px;
   height: 23px;
-  background-image: url("../img/checkbox-off.png");
+  background-image: url("../img/checkbox-off.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
   left: -35px;
@@ -1850,7 +1847,7 @@ input[type="search"]::placeholder {
   left: -35px;
   width: 27px;
   height: 23px;
-  background-image: url("../img/checkbox-on.png");
+  background-image: url("../img/checkbox-on.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
 }
@@ -1875,7 +1872,7 @@ input[type="search"]::placeholder {
   left: -36px;
   width: 25px;
   height: 25px;
-  background-image: url("../img/radio-off.png");
+  background-image: url("../img/radio-off.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
 }
@@ -1887,7 +1884,7 @@ input[type="search"]::placeholder {
   left: -36px;
   width: 25px;
   height: 25px;
-  background-image: url("../img/radio-on.png");
+  background-image: url("../img/radio-on.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
 }

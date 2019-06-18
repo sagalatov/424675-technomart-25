@@ -2723,6 +2723,7 @@ input[type="search"]::placeholder {
   background-image: url(../img/bigmap.jpg);
   background-repeat: no-repeat;
   background-position: center;
+  background-color: #ffffff;
 }
 
 .modal-map iframe {

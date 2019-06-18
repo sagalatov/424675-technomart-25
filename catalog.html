@@ -426,40 +426,7 @@
     <button type="button" class="modal-close" aria-label="Закрыть модальное окно">Закрыть</button>
   </section>
 
-  <script>
-
-    var buyLink = document.querySelectorAll(".buy");
-    var cartPopup = document.querySelector(".modal-cart");
-    var cartClose = cartPopup.querySelector(".modal-close");
-    var continueShopping = cartPopup.querySelector(".button-cart");
-    console.log(buyLink);
-
-    for (var i = 0; i < buyLink.length; i++) {
-      buyLink[i].addEventListener("click", function (evt) {
-        evt.preventDefault();
-        cartPopup.classList.add("modal-show");
-      });
-    }
-
-    cartClose.addEventListener("click", function (evt) {
-      evt.preventDefault();
-      cartPopup.classList.remove("modal-show");
-    });
-
-    continueShopping.addEventListener("click", function (evt) {
-      evt.preventDefault();
-      cartPopup.classList.remove("modal-show");
-    });
-
-    window.addEventListener("keydown", function (evt) {
-      evt.preventDefault();
-      if (evt.keyCode === 27) {
-        if (cartPopup.classList.contains("modal-show")) {
-          cartPopup.classList.remove("modal-show");
-        }
-      }
-    });
-  </script>
+  <script src="js/catalog-min-script.js"></script>
 </body>
 
 </html>

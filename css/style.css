@@ -149,7 +149,7 @@ a {
 
 .header-list .to-order {
   background-color: #63a63e;
-  padding-left: 20px;
+  padding-left: 15px;
 }
 
 .header-list .to-order:focus,
@@ -174,7 +174,7 @@ a {
 
 .header-list .full-cart {
   background-color: #ee3643;
-  padding-left: 50px;
+  padding-left: 41px;
 }
 
 .header-list .full-cart:focus,
@@ -199,7 +199,6 @@ a {
   position: relative;
   font: inherit;
   border: none;
-  padding: 12px 0;
   margin-right: 20px;
 }
 
@@ -225,9 +224,11 @@ a {
 
 .search-form input {
   position: relative;
-  margin-left: 37px;
   background-color: #293449;
   border: none;
+  height: 45px;
+  padding-left: 47px;
+  outline: none;
 }
 
 .search-form input:focus {
@@ -245,6 +246,8 @@ input[type="search"]::-webkit-input-placeholder {
   color: #ffffff;
   padding-top: 2px;
   padding-bottom: 0px;
+  width: 280px;
+  margin-left: -10px;
 }
 
 input[type="search"],
@@ -271,6 +274,7 @@ input[type="search"]::placeholder {
 .header-list .cart,
 .header-list .full-cart {
   position: relative;
+  padding-left: 41px;
 }
 
 .header-list .cart::before,
@@ -280,7 +284,7 @@ input[type="search"]::placeholder {
   width: 15px;
   height: 15px;
   top: 15px;
-  left: 18px;
+  left: 10px;
   background-image: url(../img/cart-icon.svg);
   background-position: center;
   background-repeat: no-repeat;
@@ -301,7 +305,7 @@ input[type="search"]::placeholder {
 }
 
 .header-list .bookmarks {
-  padding-left: 44px;
+  padding-left: 33px;
 }
 
 .header-list .bookmarks::before {
@@ -310,7 +314,7 @@ input[type="search"]::placeholder {
   width: 15px;
   height: 15px;
   top: 15px;
-  left: 16px;
+  left: 6px;
   background-image: url(../img/icon-bookmark.svg);
   background-position: center;
   background-repeat: no-repeat;
@@ -2457,8 +2461,8 @@ input[type="search"]::placeholder {
   content: "";
   width: 26px;
   height: 15px;
-  top: 11px;
-  left: 5px;
+  top: 13px;
+  left: 7px;
   position: absolute;
   display: block;
   background-image: url(../img/icon-vk.svg);
@@ -2472,7 +2476,7 @@ input[type="search"]::placeholder {
   width: 12px;
   height: 22px;
   top: 9px;
-  left: 13px;
+  left: 14px;
   position: absolute;
   display: block;
   background-image: url(../img/icon-fb.svg);
@@ -2486,7 +2490,7 @@ input[type="search"]::placeholder {
   width: 21px;
   height: 21px;
   top: 10px;
-  left: 7px;
+  left: 10px;
   position: absolute;
   display: block;
   background-image: url(../img/icon-insta.svg);

@@ -22,8 +22,8 @@ continueShopping.addEventListener("click", function (evt) {
 });
 
 window.addEventListener("keydown", function (evt) {
-  evt.preventDefault();
   if (evt.keyCode === 27) {
+    evt.preventDefault();
     if (cartPopup.classList.contains("modal-show")) {
       cartPopup.classList.remove("modal-show");
     }

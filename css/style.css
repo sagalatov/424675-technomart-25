@@ -1696,6 +1696,7 @@ input[type="search"]::placeholder {
   width: 220px;
   margin-bottom: 21px;
   margin-right: 20px;
+  outline: 1px solid #e5e5e5;
 }
 
 .catalog-item a {

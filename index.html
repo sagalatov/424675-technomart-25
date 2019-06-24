@@ -97,12 +97,33 @@
           </li>
         </ul>
       </section>
-      <div class="promo-column">
-        <section class="slider">
-          <button class="button slider-button slider-button-back" type="button" disabled>Назад</button>
-          <button class="button slider-button slider-button-next" type="button">Вперед</button>
-          <a href="#" class="to-catalog button">Открыть каталог</a>
-        </section>
+        <article class="slider">
+            <input type="radio" id="btn-1" name="toggle" checked>
+            <input type="radio" id="btn-2" name="toggle">
+            <div class="slider-controls">
+              <label for="btn-1"></label>
+              <label for="btn-2"></label>
+            </div>
+            <label class="arrow-left" for="btn-1"></label>
+            <label class="arrow-right" for="btn-2"></label>
+            <div class="slides">
+              <div class="slide">
+                <div class="slide-text">
+                  <h2 class="slide-title">Дрели</h2>
+                  <span>Соседям на радость!</span>
+                  <a class="btn" href="catalog.html">Открыть каталог</a>
+                </div>
+              </div>
+              <div class="slide">
+                <div class="slide-text">
+                  <h2 class="slide-title">Перфораторы</h2>
+                  <span>Настоящие мужские игрушки</span>
+                  <a class="btn" href="catalog-drill.html">Открыть каталог</a>
+                </div>
+              </div>
+            </div>
+          </article>
+          <div class="promo-column">
         <div class="stock">
           <ul class="stock-list reset-list">
             <li class="discount">

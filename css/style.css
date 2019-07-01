@@ -2411,6 +2411,7 @@ input[type=text] {
   margin-right: 0;
 }
 
+.footer-nav-list a:hover,
 .footer-nav-list a:focus {
   text-decoration: underline;
 }
@@ -2436,9 +2437,9 @@ input[type=text] {
   text-decoration: underline;
 }
 
-.footer-offer-list a:focus {
-  color: rgba(241, 245, 247, 0.5);
+.footer-offer-list a:active{
   text-decoration: none;
+  color: rgba(255, 209, 128, 0.5);
 }
 
 .bottom-line {

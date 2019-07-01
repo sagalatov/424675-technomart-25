@@ -1585,6 +1585,7 @@ margin-right: 25px;
   display: flex;
   min-height: 38px;
   margin-bottom: 57px;
+  flex-wrap: wrap;
 }
 
 .pagination-list li {
@@ -1597,10 +1598,11 @@ margin-right: 25px;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  width: 38px;
   margin-right: 8px;
+  margin-bottom: 5px;
   border: 1px solid #e5e5e5;
   border-radius: 3px;
+  padding: 2px 2px;
 }
 
 .pagination-list li:hover,
@@ -1617,6 +1619,7 @@ margin-right: 25px;
 }
 
 .pagination-list a {
+  padding: 8px 14px 10px 16px;
   font-size: 13px;
   line-height: 18px;
   font-family: 'PT Sans', 'Arial Narrow', sans-serif;

@@ -2406,12 +2406,14 @@ input[type=text] {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  flex-wrap: wrap;
 }
 
 .footer-nav-list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  flex-wrap: wrap;
 }
 
 .main-footer-logo h1>a {
@@ -2452,7 +2454,11 @@ input[type=text] {
 
 .footer-nav-list a {
   color: #ffffff;
-  margin-right: 59px;
+  padding: 10px 58px 10px 0;
+}
+
+.footer-nav-list li:nth-child(5) a{
+  padding-right: 2px;
 }
 
 .footer-nav-list .contacts {
@@ -2477,7 +2483,11 @@ input[type=text] {
 
 .footer-offer-list a {
   color: #ffd180;
-  margin-right: 60px;
+  padding: 10px 58px 10px 0;
+}
+
+.footer-offer-list li:nth-child(4) a{
+  padding-right: 2px;
 }
 
 .footer-offer-list a:hover,

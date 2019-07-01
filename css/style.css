@@ -1835,34 +1835,40 @@ margin-right: 25px;
 
 .catalog-item-price del {
   display: block;
-  margin-bottom: 15px;
+  margin-bottom: 9px;
+  margin-left: 34px;
 }
 
 .catalog-item-price .button {
-  display: block;
-  margin-bottom: 26px;
-  position: relative;
-  padding: 5px 0;
   font-size: 17px;
-  line-height: 18px;
+  position: relative;
+  display: inline-block;
+  width: 80px;
+  margin-right: 10px;
+  padding: 10px 14px 10px 27px;
+  text-decoration: none;
+  color: #fff;
+  background: #ee3643;
+  border-radius: 3px 0 0 3px;
+  margin-bottom: 20px;
 }
+
+.catalog-item-price .button:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: -38px;
+  width: 0;
+  height: 0;
+  border: 19px solid #fff;
+  border-left-color: #ee3643;
+}
+
+
 
 .catalog-item-price a:hover,
 .catalog-item-price a:focus {
   background-color: #ee3643;
-}
-
-.catalog-item-price .button::after {
-  position: absolute;
-  content: "";
-  width: 141px;
-  height: 38px;
-  background-image: url(../img/item-button.svg);
-  background-repeat: no-repeat;
-  background-position: center;
-  top: -5px;
-  left: -36px;
-  z-index: -1;
 }
 
 .catalog-item:nth-child(3n) {

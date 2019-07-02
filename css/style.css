@@ -1487,13 +1487,8 @@ p.additional-text {
 }
 
 .sort-list li {
-  display: flex;
-  -webkit-box-align: center;
-  align-items: center;
   background-color: #f7f3ec;
-  min-height: 38px;
-  padding-left: 18px;
-  border-radius: 2px;
+  padding: 9px 0;
 }
 
 .sort-list li:last-child {
@@ -1504,16 +1499,17 @@ p.additional-text {
 .sort-list li:first-child {
   width: 200px;
   margin-right: 22px;
-  min-height: 38px;
-  border-radius: 2px;
+  padding-left: 20px;
 }
 
 .sort-list li:nth-child(2) {
   width: 204px;
+  padding-left: 18px;
 }
 
 .sort-list .price {
   margin-right: 56px;
+  margin-left: 17px;
 }
 
 .sort-list a {
@@ -1523,10 +1519,12 @@ p.additional-text {
 
 .sort-list .type {
   margin-right: 45px;
+  margin-left: 14px;
 }
 
 .sort-list .function {
-  margin-right: 25px;
+  margin-right: 83px;
+  margin-left: 20px;
 }
 
 .catalog-column {
@@ -1575,8 +1573,8 @@ p.additional-text {
 .sort-list .up::before {
   position: absolute;
   content: "";
-  left: 2px;
-  top: -7px;
+  left: -36px;
+  top: 5px;
   border-left: 6px solid transparent;
   border-right: 6px solid transparent;
   border-top: 10px solid #c5c5c5;
@@ -1588,8 +1586,8 @@ p.additional-text {
 .sort-list .down::before {
   position: absolute;
   content: "";
-  left: 7px;
-  top: -7px;
+  left: -11px;
+  top: 4px;
   border-left: 6px solid transparent;
   border-right: 6px solid transparent;
   border-top: 10px solid #c5c5c5;

@@ -2665,6 +2665,7 @@ input[type=text] {
   margin-left: -310px;
   border-top: 7px solid #ee3643;
   padding-top: 55px;
+  z-index: 100;
 }
 
 .modal-feedback .container {
@@ -2840,6 +2841,11 @@ input[type=text] {
   background-repeat: no-repeat;
   background-position: center;
   background-color: #ffffff;
+  z-index: 100;
+}
+
+.modal-map img {
+  margin-top: -1000px;
 }
 
 .modal-map iframe {

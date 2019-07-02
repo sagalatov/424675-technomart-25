@@ -1582,6 +1582,10 @@ p.additional-text {
           transform: rotate(180deg);
 }
 
+.current-sort .up::before {
+  border-top: 10px solid #ee3643;
+}
+
 .sort-list .down::before {
   position: absolute;
   content: "";

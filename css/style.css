@@ -1915,7 +1915,6 @@ p.additional-text {
   flex-wrap: wrap;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
-  justify-content: space-between;
   margin-bottom: 32px;
   font-family: "PT Sans", "Arial Narrow", sans-serif;
   font-size: 18px;
@@ -2907,6 +2906,7 @@ input[type=text] {
   margin-top: -215px;
   margin-left: -310px;
   border-top: 7px solid #ee3643;
+  z-index: 100;
 }
 
 .modal-cart p {

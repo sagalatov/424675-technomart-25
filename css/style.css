@@ -1473,7 +1473,11 @@ p.additional-text {
 }
 
 .sort-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   text-transform: uppercase;
   font-size: 13px;
@@ -2338,7 +2342,6 @@ input[type=text] {
   height: 158px;
   padding: 0;
   margin: 0;
-  margin-bottom: 33px;
 }
 
 .contacts .button {
@@ -2349,7 +2352,10 @@ input[type=text] {
 .contacts-button-map {
   width: 300px;
   height: 158px;
-  margin-bottom: 37px;
+}
+
+.contacts .write-us {
+  margin-top: 33px;
 }
 
 .main-footer {
@@ -2391,6 +2397,7 @@ input[type=text] {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
 }
 
@@ -2398,6 +2405,7 @@ input[type=text] {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
 }
 
@@ -2703,6 +2711,7 @@ input[type=text] {
   display: flex;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
+  font-family: "Cuprum", "Arial", sans-serif;
 }
 
 .feedback-form p {
@@ -2720,6 +2729,8 @@ input[type=text] {
 
 .feedback-form label {
   margin-bottom: 10px;
+  line-height: 18px;
+  font-size: 18px;
 }
 
 .feedback-form .first-column {
@@ -2921,6 +2932,9 @@ input[type=text] {
   padding-left: 179px;
   padding-right: 126px;
   margin-bottom: 68px;
+  font-family: "Cuprum", "Arial", sans-serif;
+  line-height: 30px;
+  font-size: 30px;
 }
 
 .modal-cart p::before {
@@ -2992,7 +3006,7 @@ input[type=text] {
 
 .modal-cart .button-cart:active {
   border: 2px solid #ee3643;
-  border-radius: 3px;
+  border-radius: 2px;
   outline: none;
 }
 

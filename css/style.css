@@ -1,6 +1,5 @@
 body,
 html {
-  min-width: 960px;
   margin: 0;
   padding: 0;
   font-size: 13px;
@@ -2873,10 +2872,12 @@ input[type=text] {
 .modal-close::after {
   content: "";
   position: absolute;
-  width: 19px;
-  height: 3px;
+  width: 24px;
+  height: 4px;
   background-color: #ee3643;
+  border-radius: 2px;
   z-index: 3;
+  left: 8px;
 }
 
 .modal-close::before {
@@ -2915,7 +2916,7 @@ input[type=text] {
   padding: 0;
   font-size: 30px;
   line-height: 30px;
-  width: 317px;
+  width: 400px;
   padding-top: 65px;
   padding-left: 179px;
   padding-right: 126px;
@@ -2952,7 +2953,7 @@ input[type=text] {
 .modal-cart a {
   color: #ffffff;
   background-color: #ee3643;
-  padding: 10px 50px 10px 50px;
+  padding: 10px 55px 10px 55px;
   border-radius: 3px;
   margin-left: 80px;
   margin-right: 20px;
@@ -2970,21 +2971,29 @@ input[type=text] {
 }
 
 .modal-cart .button-cart {
-  padding: 10px 31px 10px 31px;
+  padding: 13px 46px 13px 46px;
   text-transform: uppercase;
-  outline: none;
-  outline-offset: none;
+  border: none;
+  font: inherit;
+  color: inherit;
+  background-color: #ffffff;
+  font-family: "Cuprum", "Arial", sans-serif;
+  line-height: 18px;
+  font-size: 14px;
+  border-radius: 3px;
 }
 
 .modal-cart .button-cart:hover,
 .modal-cart .button-cart:focus {
   cursor: pointer;
   border-color: #bdc6ca;
+  outline: none;
 }
 
 .modal-cart .button-cart:active {
   border: 2px solid #ee3643;
   border-radius: 3px;
+  outline: none;
 }
 
 .modal-show {

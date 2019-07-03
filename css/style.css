@@ -2961,7 +2961,7 @@ input[type=text] {
   display: flex;
   background-color: #f1f1f1;
   width: 100%;
-  min-height: 113px;
+  height: 113px;
 }
 
 .modal-cart a {

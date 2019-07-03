@@ -6,6 +6,13 @@ var login = document.querySelector("[name=user-name]");
 var email = document.querySelector("[name=email]");
 var isStorageSupport = true;
 var storage = "";
+var mapLink = document.querySelector(".contacts-button-map");
+var mapPopup = document.querySelector(".modal-map");
+var mapClose = document.querySelector(".modal-map .modal-close");
+var buyLink = document.querySelectorAll(".buy");
+var cartPopup = document.querySelector(".modal-cart");
+var cartClose = document.querySelector(".modal-cart .modal-close");
+var continueShopping = document.querySelector(".button-cart");
 
 try {
     storage = localStorage.getItem("login");
@@ -58,10 +65,6 @@ window.addEventListener("keydown", function(evt) {
     }
 });
 
-var mapLink = document.querySelector(".contacts-button-map");
-var mapPopup = document.querySelector(".modal-map");
-var mapClose = document.querySelector(".modal-map .modal-close");
-
 mapLink && mapLink.addEventListener("click", function(evt) {
     evt.preventDefault();
     mapPopup.classList.add("modal-show");
@@ -80,11 +83,6 @@ window.addEventListener("keydown", function(evt) {
         }
     }
 });
-
-var buyLink = document.querySelectorAll(".buy");
-var cartPopup = document.querySelector(".modal-cart");
-var cartClose = document.querySelector(".modal-cart .modal-close");
-var continueShopping = document.querySelector(".button-cart");
 
 for (var i = 0; i < buyLink.length; i++) {
     buyLink[i].addEventListener("click", function(evt) {

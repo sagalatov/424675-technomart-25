@@ -608,6 +608,11 @@ input[type=search]:focus+label path {
   flex-wrap: wrap;
 }
 
+.categories-list p {
+  word-wrap: break-word;
+  width: 150px;
+}
+
 .categories-list li {
   margin-right: 20px;
   margin-bottom: 20px;
@@ -961,6 +966,11 @@ input[type=search]:focus+label path {
 
 .stock-list {
   margin-left: 20px;
+}
+
+.stock-list p {
+word-wrap: break-word;
+width: 150px;
 }
 
 .stock-list li {

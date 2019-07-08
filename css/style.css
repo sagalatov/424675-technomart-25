@@ -76,8 +76,8 @@ a.button {
   text-decoration: none;
 }
 
- .logo h1,
- .main-footer-logo h1 {
+.logo h1,
+.main-footer-logo h1 {
   margin: 0;
   padding: 0;
   font-size: 36px;
@@ -859,16 +859,6 @@ input[type=search]:focus+label path {
   cursor: pointer;
 }
 
-.slider .arrow-right:hover::after,
-.slider .arrow-right:hover::before {
-  background-color: #ee3643;
-}
-
-.slider .arrow-left:hover::after,
-.slider .arrow-left:hover::before {
-  background-color: #00d9ff;
-}
-
 .slider .arrow-left::after,
 .slider .arrow-right::after,
 .slider .arrow-right::before {
@@ -1486,6 +1476,15 @@ p.additional-text {
   background-image: url(../img/icon-home.svg);
   background-position: center;
   background-repeat: no-repeat;
+}
+
+.to-home:focus:after {
+  box-shadow: 0 0 5px 2px #818181;
+}
+
+.to-home:active:after,
+.to-home:hover:after {
+  box-shadow: none;
 }
 
 .breadcrumbs li::after {

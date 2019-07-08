@@ -866,7 +866,7 @@ input[type=search]:focus+label path {
 
 .slider .arrow-left:hover::after,
 .slider .arrow-left:hover::before {
-  background-color: #ee3643;
+  background-color: #00d9ff;
 }
 
 .slider .arrow-left::after,
@@ -908,6 +908,23 @@ input[type=search]:focus+label path {
 #btn-1:checked~.slider-controls label[for=btn-1],
 #btn-2:checked~.slider-controls label[for=btn-2] {
   background: #ee3643;
+}
+
+#btn-1:focus~.slider-controls label[for=btn-1],
+#btn-2:focus~.slider-controls label[for=btn-2] {
+  border: 3px solid #00d9ff;
+}
+
+#btn-1:focus~.slider-rotate .arrow-right::after,
+#btn-1:focus~.slider-rotate .arrow-right::before {
+  box-shadow: 0 0 5px 2px #00d9ff;
+  background-color: #00d9ff
+}
+
+#btn-2:focus~.slider-rotate .arrow-left::after,
+#btn-2:focus~.slider-rotate .arrow-left::before {
+  box-shadow: 0 0 5px 2px #00d9ff;
+  background-color: #00d9ff
 }
 
 .slide {
@@ -1343,6 +1360,12 @@ input[type=search]:focus+label path {
   border-top: 1px solid #ffffff;
   border-bottom: 1px solid #ffffff;
   outline: none;
+}
+
+#button-1:focus~.service-toggle label[for=button-1],
+#button-2:focus~.service-toggle label[for=button-2],
+#button-3:focus~.service-toggle label[for=button-3] {
+  outline: 3px solid #989898;
 }
 
 .service-touch-button p {

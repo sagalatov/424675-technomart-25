@@ -2223,16 +2223,33 @@ input[type=text] {
   user-select: none;
 }
 
-.filter-input-checkbox:not(:checked)+label::after {
+.filter-input-checkbox:checked+label::after {
   content: "";
   position: absolute;
   top: -3px;
   left: -36px;
   width: 27px;
   height: 29px;
-  background-image: url("../img/sprite-radio-check.png");
+  background-image: url("../img/sprite-radio.png");
   background-repeat: no-repeat;
-  background-position: -31px 0;
+  background-position: -91px 0;
+}
+
+.filter-input-checkbox:checked:focus+label::after,
+.filter-input-checkbox:checked:hover+label::after {
+  background-position: -91px -31px;
+}
+
+.filter-input-checkbox:disabled+label::before {
+  content: "";
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  left: -39px;
+  top: -4px;
+  background-color: rgba(255, 255, 255, 0.5);
+  z-index: 4;
+  cursor: default;
 }
 
 .filter-input-checkbox+label::after {
@@ -2242,9 +2259,14 @@ input[type=text] {
   left: -36px;
   width: 27px;
   height: 29px;
-  background-image: url("../img/sprite-radio-check.png");
+  background-image: url("../img/sprite-radio.png");
   background-repeat: no-repeat;
-  background-position: -3px 0;
+  background-position: -63px 0;
+}
+
+.filter-input-checkbox:focus+label::after,
+.filter-input-checkbox:hover+label::after {
+  background-position: -63px -31px;
 }
 
 .filter-option {
@@ -2260,16 +2282,21 @@ input[type=text] {
   text-transform: uppercase;
 }
 
-.filter-input-radio:not(:checked)+label::after {
+.filter-input-radio:checked+label::after {
   content: "";
   position: absolute;
   top: -3px;
   left: -36px;
   width: 27px;
   height: 29px;
-  background-image: url("../img/sprite-radio-check.png");
+  background-image: url("../img/sprite-radio.png");
   background-repeat: no-repeat;
-  background-position: -60px 0;
+  background-position: -32px 0;
+}
+
+.filter-input-radio:checked:focus+label::after,
+.filter-input-radio:checked:hover+label::after {
+  background-position: -32px -31px;
 }
 
 .filter-input-radio+label::after {
@@ -2279,9 +2306,26 @@ input[type=text] {
   left: -36px;
   width: 27px;
   height: 29px;
-  background-image: url("../img/sprite-radio-check.png");
+  background-image: url("../img/sprite-radio.png");
   background-repeat: no-repeat;
-  background-position: -90px 0;
+  background-position: -1px 0;
+}
+
+.filter-input-radio:focus+label::after,
+.filter-input-radio:hover+label::after {
+  background-position: -1px -31px;
+}
+
+.filter-input-radio:disabled+label::before {
+  content: "";
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  left: -39px;
+  top: -4px;
+  background-color: rgba(255, 255, 255, 0.5);
+  z-index: 4;
+  cursor: default;
 }
 
 .filters fieldset:nth-child(2) {

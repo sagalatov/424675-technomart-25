@@ -115,12 +115,12 @@
         <input type="radio" id="btn-1" name="toggle" checked>
         <input type="radio" id="btn-2" name="toggle">
         <div class="slider-controls">
-          <label aria-label="first-slide" for="btn-1"></label>
-          <label aria-label="second-slide" for="btn-2"></label>
+          <label aria-label="Первый слайд, картинка: Дрели соседям на радость" for="btn-1"></label>
+          <label aria-label="Второй слайд, картинка: Настоящие мужские игрушки" for="btn-2"></label>
         </div>
-        <label class="arrow-left" for="btn-1"></label>
+        <label class="arrow-left" for="btn-1" tabindex="0"></label>
         <label class="arrow-right" for="btn-2"></label>
-        <div class="slides">
+        <div class="slides"  tabindex="0">
           <div class="slide">
             <div class="slide-text">
               <h2 class="slide-title">Дрели</h2>
@@ -289,7 +289,7 @@
           <input type="radio" id="button-1" name="service-toggle" checked>
           <input type="radio" id="button-2" name="service-toggle">
           <input type="radio" id="button-3" name="service-toggle">
-          <div class="service-toggle">
+          <div class="service-toggle" tabindex="0">
             <label for="button-1">Доставка</label>
             <label for="button-2">Гарантия</label>
             <label for="button-3">Кредит</label>

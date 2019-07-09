@@ -907,13 +907,15 @@ input[type=search]:focus+label path {
 
 #btn-1:focus~.slider-rotate .arrow-right::after,
 #btn-1:focus~.slider-rotate .arrow-right::before {
-  box-shadow: 0 0 5px 2px #00d9ff;
+  -webkit-box-shadow: 0 0 5px 2px #00d9ff;
+          box-shadow: 0 0 5px 2px #00d9ff;
   background-color: #00d9ff
 }
 
 #btn-2:focus~.slider-rotate .arrow-left::after,
 #btn-2:focus~.slider-rotate .arrow-left::before {
-  box-shadow: 0 0 5px 2px #00d9ff;
+  -webkit-box-shadow: 0 0 5px 2px #00d9ff;
+          box-shadow: 0 0 5px 2px #00d9ff;
   background-color: #00d9ff
 }
 
@@ -1479,12 +1481,14 @@ p.additional-text {
 }
 
 .to-home:focus:after {
-  box-shadow: 0 0 5px 2px #818181;
+  -webkit-box-shadow: 0 0 5px 2px #818181;
+          box-shadow: 0 0 5px 2px #818181;
 }
 
 .to-home:active:after,
 .to-home:hover:after {
-  box-shadow: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }
 
 .breadcrumbs li::after {

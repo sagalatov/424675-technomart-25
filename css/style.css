@@ -1571,7 +1571,7 @@ p.additional-text {
 
 .sort-list li:last-child {
   padding-left: 6px;
-  padding-right: 7px;
+  padding-right: 6px;
 }
 
 .sort-list li:first-child {

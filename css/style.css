@@ -908,14 +908,14 @@ input[type=search]:focus+label path {
 #btn-1:focus~.slider-rotate .arrow-right::after,
 #btn-1:focus~.slider-rotate .arrow-right::before {
   -webkit-box-shadow: 0 0 5px 2px #00d9ff;
-          box-shadow: 0 0 5px 2px #00d9ff;
+  box-shadow: 0 0 5px 2px #00d9ff;
   background-color: #00d9ff
 }
 
 #btn-2:focus~.slider-rotate .arrow-left::after,
 #btn-2:focus~.slider-rotate .arrow-left::before {
   -webkit-box-shadow: 0 0 5px 2px #00d9ff;
-          box-shadow: 0 0 5px 2px #00d9ff;
+  box-shadow: 0 0 5px 2px #00d9ff;
   background-color: #00d9ff
 }
 
@@ -1388,6 +1388,21 @@ input[type=search]:focus+label path {
   font-family: "PT Sans", "Arial", sans-serif;
 }
 
+.service-touch-button .btn:focus {
+  outline: 2px solid #a2a2a2;
+  background-color: #ca2c37;
+}
+
+.service-touch-button .btn:hover {
+  background-color: #ca2c37;
+  outline: none;
+}
+
+.service-touch-button .btn:active {
+  outline: none;
+  background-color: #ba2732;
+}
+
 p.additional-text {
   width: 200px;
 }
@@ -1482,13 +1497,13 @@ p.additional-text {
 
 .to-home:focus:after {
   -webkit-box-shadow: 0 0 5px 2px #818181;
-          box-shadow: 0 0 5px 2px #818181;
+  box-shadow: 0 0 5px 2px #818181;
 }
 
 .to-home:active:after,
 .to-home:hover:after {
   -webkit-box-shadow: none;
-          box-shadow: none;
+  box-shadow: none;
 }
 
 .breadcrumbs li::after {
